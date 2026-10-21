@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#041326">
+  <title>After Hours — Developer Studio</title>
+  <link rel="preload" href="./assets/Tiny5-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./sections.css">
+</head>
+<body>
+  <main id="app" data-state="room" data-lamp="dark">
+    <div class="scene-viewport" id="scene-viewport">
+      <div class="world" id="world">
+        <video id="dark-video" class="room-video is-active" src="./after_hours_dark_ambient_canonical_v1_4s.mp4" poster="./assets/studio-dark.png" autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>
+        <video id="lit-video" class="room-video" src="./after_hours_lit_ambient_breathing_v3_4s.mp4" poster="./assets/studio-lit.png" muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>
+        <video id="lighting-video" class="room-video" src="./after_hours_transition_clean_2s.mp4" muted playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>
+        <canvas id="frozen-room" width="1672" height="942" aria-hidden="true" hidden></canvas>
+        <div id="monitor-live" class="monitor-live" aria-hidden="true"></div>
+        <button id="monitor-hotspot" class="hotspot monitor-hotspot" type="button" aria-label="Open Projects on the studio monitor"></button>
+        <div id="about-live" class="about-live" aria-hidden="true"></div>
+        <button id="about-hotspot" class="hotspot about-hotspot" type="button" aria-label="Open About Me on the green monitor"></button>
+        <button id="lamp-hotspot" class="hotspot lamp-hotspot" type="button" aria-label="Turn on the desk lamp" aria-pressed="false"></button>
+        <button id="journey-hotspot" class="hotspot journey-hotspot" type="button" aria-label="Open Journey on the pinned board" title="Journey"></button>
+        <button id="resume-hotspot" class="hotspot resume-hotspot" type="button" aria-label="Open Resume in the journal" title="Resume"></button>
+        <button id="contact-hotspot" class="hotspot contact-hotspot" type="button" aria-label="Open Contact on the phone" title="Contact"></button>
+        <button id="bookshelf-hotspot" class="hotspot bookshelf-hotspot" type="button" aria-label="Open Notes on the bookshelf" title="Reading & notes"></button>
+      </div>
+    </div>
+    <div class="mobile-access" id="mobile-access">
+      <span class="pan-hint" aria-hidden="true">DRAG TO EXPLORE</span>
+      <button id="mobile-projects" type="button">PROJECTS <span aria-hidden="true">&gt;</span></button>
+      <button id="mobile-about" type="button">ABOUT ME <span aria-hidden="true">&gt;</span></button>
+      <button id="mobile-journey" type="button">JOURNEY <span aria-hidden="true">&gt;</span></button>
+      <button id="mobile-resume" type="button">RESUME <span aria-hidden="true">&gt;</span></button>
+      <button id="mobile-contact" type="button">CONTACT <span aria-hidden="true">&gt;</span></button>
+      <button id="mobile-bookshelf" type="button">NOTES <span aria-hidden="true">&gt;</span></button>
+    </div>
+    <section id="projects-panel" class="projects-panel" aria-label="Projects" aria-hidden="true" inert hidden>
+      <div id="expanded-stage" class="expanded-stage"></div>
+      <article id="project-detail" class="project-detail" hidden></article>
+    </section>
+    <section id="about-panel" class="about-panel" aria-label="About Me" aria-hidden="true" inert hidden>
+      <div id="about-stage" class="about-stage"></div>
+    </section>
+    <svg id="speed-lines" class="speed-lines" aria-hidden="true" focusable="false"></svg>
+    <section id="object-panel" class="object-panel" aria-label="Studio section" aria-hidden="true" inert hidden></section>
+    <p id="announcer" class="sr-only" role="status" aria-live="polite"></p>
+    <output id="calibration" hidden></output>
+  </main>
+  <script src="./projects.js"></script>
+  <script src="./about.js"></script>
+  <script src="./content.js"></script>
+  <script src="./sections.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

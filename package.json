@@ -1,0 +1,11 @@
+{
+  "name": "after-hours-studio",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 4173 --bind 127.0.0.1",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}
