@@ -2,7 +2,8 @@
 // Scan staged bytes, reporting paths and rule names only, never matched values.
 const {execFileSync}=require('node:child_process');
 const fs=require('node:fs');const {parseEnv}=require('node:util');
-const files=execFileSync('git',['diff','--cached','--name-only','--diff-filter=ACMR','-z']).toString().split('\0').filter(Boolean);
+const all=process.argv.includes('--all');
+const files=execFileSync('git',all?['ls-files','-z']:['diff','--cached','--name-only','--diff-filter=ACMR','-z']).toString().split('\0').filter(Boolean);
 const rules=[
   ['GitHub token',/\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,})\b/],
   ['AWS access key',/\b(?:AKIA|ASIA)[A-Z0-9]{16}\b/],
@@ -27,5 +28,5 @@ for(const file of files){
   for(const [rule,pattern] of rules)if(pattern.test(text))findings.push({file,rule});
   if(localSecrets.some(value=>text.includes(value)))findings.push({file,rule:'Known local credential'});
 }
-console.log(JSON.stringify({stagedFiles:files.length,findings},null,2));
+console.log(JSON.stringify({scope:all?'all tracked files':'staged changes',files:files.length,findings},null,2));
 if(findings.length)process.exitCode=1;
