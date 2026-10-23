@@ -125,7 +125,7 @@ button {
   top:346px;
   width:124px;
   height:112px;
-  border-radius:40% 45% 10% 15%
+  border-radius:0
 }
 .hotspot:focus-visible {
   outline:2px solid #f7d8a4;
@@ -292,6 +292,14 @@ button {
   white-space:nowrap;
   text-overflow:ellipsis;
   overflow:hidden
+}
+.card-title-long {
+  font-size:14px;
+  line-height:14px;
+  white-space:normal;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2
 }
 .card-tags {
   display:flex;

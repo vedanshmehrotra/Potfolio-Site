@@ -1,0 +1,19 @@
+{
+  "origin": "http://127.0.0.1:4180",
+  "checks": [
+    "Public CMS API returns all five approved milestones in confirmed order",
+    "Real unclicked page lights automatically after readiness, plays the supplied transition, and starts the lit ambient loop; audio stays locked until a gesture; manual off stays dark",
+    "1440px: real CMS pins, story selection, full board visibility, no document overflow and reverse navigation",
+    "390px: real CMS pins, story selection, full board visibility, no document overflow and reverse navigation",
+    "320px: real CMS pins, story selection, full board visibility, no document overflow and reverse navigation"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "lampTimes": {
+    "ready": 656.6000000089407,
+    "lighting": 4158.70000000298,
+    "lit": 6286.4000000059605
+  },
+  "lampDelayMs": 3502.0999999940395,
+  "passed": true
+}

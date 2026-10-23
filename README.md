@@ -1,66 +1,159 @@
-# After Hours studio prototype
+<h1 align="center">After Hours</h1>
 
-Run `npm run dev`, then open <http://127.0.0.1:4173/>. This folder originally contained the approved media and specification without an existing framework or website source. The implementation therefore uses HTML, CSS, JavaScript and the native Web Animations API.
+<p align="center">
+  <strong>My portfolio, inside a pixel-art studio.</strong><br>
+  Backend · Cloud · Applied AI
+</p>
 
-## Interaction
+<p align="center">
+  <a href="https://after-hours-portfolio-virid.vercel.app/">
+    <img src="https://img.shields.io/badge/ENTER_THE_STUDIO-2457D6?style=for-the-badge&logo=vercel&logoColor=white" alt="Open the live portfolio">
+  </a>
+  <a href="https://github.com/vedanshmehrotra">
+    <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
+  </a>
+  <a href="https://www.linkedin.com/in/vedansh-mehrotra-05b41331b/">
+    <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn profile">
+  </a>
+</p>
 
-- The room fills the viewport. Click the lamp shade to play `after_hours_transition_clean_2s.mp4`; its last frame hands off to the lit ambient loop. Lamp activation is independent of Projects. This version implements the requested one-way lamp activation; refresh starts in the dark room.
-- Click the main monitor to enter Projects. Three illustrated pixel cards use the original artwork's mountain, cabin and campfire previews. Their original sample names are explicitly marked as preview data.
-- Click the small green CRT beside the cat to enter About Me with the same smooth camera and pixel streaks. Back / Escape / browser Back returns to that monitor and preserves the room's lighting and framing. Portrait devices have an About Me shortcut when the CRT is outside the crop.
-- Arrow keys and buttons select a card. Click a card to read its detail. Escape / Back returns detail → Projects → room, restoring monitor focus and lamp state.
-- On portrait phones the wide studio fills the screen and can be dragged sideways. A Projects fallback button is provided. Inside Projects, swipe through the enlarged pixel cards.
-- Query deep links such as `/?project=pixeljournal-preview` work on refresh. `?view=projects` opens the selector.
-- `?view=about` opens the profile directly and works on refresh.
-- The pinned board opens Journey (`?view=journey`): hover, focus, or tap a photo to read its milestone. Six pins per page keep the complete board visible; more published milestones create additional pages. The red thread follows their sort order. Room artwork stays baked and unchanged.
-- The open journal left of the monitor opens Resume (`?view=resume`). Select a chapter to read the pixel typeset version. Its download control sits at the top right. The PDF URL is independent of the chapter content. The attached CV is not copied into public assets while its public contact details are undecided.
-- The phone beside the journal opens Contact (`?view=contact`). Name and reply email are optional; message is required. Drafts survive navigation within the page, failures retain the text, and success is shown only after a successful backend response. Refresh clears the in-memory draft. The contact interface exposes no phone number or recipient email.
-- All three use the approved smooth camera and shared rush effect. Each has portrait shortcuts, keyboard entry, Escape / Back / browser history, and reduced-motion behavior.
-- Projects detail has compact Overview, Engineering, Evidence, and Stack & links file navigation. About stays personal, with the GitHub and LinkedIn URLs supplied in the CV.
-- The left bookshelf opens Reading & notes (`?view=bookshelf`), a small collection with selectable published entries and optional source links. Its placeholder content can be replaced independently of the room artwork.
-- Reduced motion pauses ambient playback, skips the lamp clip and camera rush, and retains keyboard navigation.
+## The idea
 
-## Shared content and assets
+I wanted my portfolio to feel like a place you can explore.
 
-`projects.js` defines the JSDoc Project model and one `projectRepository.listPublished()` service. Both monitor and expanded views use `screenMarkup()` against the same published records. Replace the fixture repository with a CMS/API adapter; no admin backend or credentials are included.
+The monitor opens my projects. The green CRT introduces me. A pinned board follows my professional journey, a journal holds my resume, and the phone lets you leave a message.
 
-`about.js` contains the editable starter profile and an `aboutRepository.getPublished()` boundary. Its copy uses the supplied AI/ML undergraduate background and has no invented contact details or credentials. The green monitor and destination use the same record and markup. Drafts remain hidden; missing and failed content have explicit states. Desktop content uses a 528 × 432 layout displayed at one quarter size within the native 132 × 108 screen, then enlarged by the same camera. Phones reflow the content into a scrollable page.
+Behind the room is a small full-stack application: an owner dashboard, PostgreSQL content storage, private file uploads and email delivery. I can update the portfolio without editing the website's code.
 
-The approved MP4 files were not changed. `assets/studio-dark.png` and `assets/studio-lit.png` are byte copies of frames 000 and 016 from the supplied ZIP. The preview covers are SVG viewports onto that image, not generated or repainted artwork. The locally served [Tiny5 font](https://github.com/google/fonts/tree/af92066a6e6eb75cec7833820f6e71b828467881/ofl/tiny5) is distributed with its original OFL license.
+## 📸 The studio
 
-The world uses one native 1672 × 942 coordinate system. The Projects rectangle is x=544, y=322, width=568, height=268. The About Me rectangle is x=1165, y=493, width=132, height=108. Camera maps and clipping are calculated from the active screen and viewport dimensions. A current-frame canvas snapshot avoids video decoding during the rush. Native pixel artwork and type preserve the pixel direction.
+<img src="docs/screenshots/studio.png" width="1440" alt="Pixel-art studio with three project previews on the main monitor, a parrot, a sleeping cat and rain outside the window">
 
-## New section content and backend boundary
+The scene keeps its original room artwork and ambient videos. Live monitor content, localized animal sprites and interactions sit on top of it.
 
-`content.js` supplies `journeyRepository.listPublished()`, `resumeRepository.getPublished()`, `notesRepository.listPublished()`, and `contactRepository.send()`. `sections.js` renders the physical-object destinations; it declares their source-coordinate rectangles once. Journey, resume and notes exclude drafts and have missing/error states. Photos are referenced by URL and alt text. Journey uses stable IDs, sort order, results and descriptions; its strings follow chronological sort order. The room board, journal, phone and bookshelf have no live content overlays.
+<p align="center">
+  <img src="docs/screenshots/projects.png" width="48%" alt="PathForge project file inside the retro monitor interface">
+  <img src="docs/screenshots/certifications.png" width="48%" alt="Certification shelf displaying an edX verified credential">
+</p>
 
-The read adapters are fixtures ready to replace with authenticated API-backed administration and Neon persistence. No database, upload service, or admin login has been provisioned. Future administration covers all sections, media and publishing, not only Journey. About has no resume or Journey tabs.
+## What you can explore
 
-`api/contact.js` is an optional Vercel Node function using the [Resend HTTP API](https://resend.com/docs/api-reference/emails/send-email), with no SDK dependency. It validates message fields and request size, rejects the honeypot, checks the configured origin, and accepts only the server-configured recipient. `.env.example` lists server-only settings. Delivery defaults to disabled. Configure a verified sender, recipient, API key, allowed origin and platform rate limit before setting `CONTACT_ENABLED=true`. Origin validation and the honeypot alone are not sufficient abuse controls. No real emails were sent during development.
+| Object | Inside |
+| --- | --- |
+| Main monitor | **Projects** — PathForge, ResolveFlow, Automated CI/CD Framework and PlanEase. Short explanations, process steps, screenshots and stack links. |
+| Green CRT | **About me** — interests, current direction and profile links. |
+| Pinned board | **Journey** — education, internships, leadership and academic recognition, connected by a red thread. |
+| Open journal | **Resume** — readable chapters and the original PDF download. |
+| Bookshelf | **Certifications & learning** — AWS Educate badges, course certificates and verification links. |
+| Phone | **Contact** — a message form with actual inbox delivery and errors inside the app. |
 
-The Python static development server does not execute Vercel functions; sending there returns an honest unconfigured/error state. The browser tests exercise success and failure with controlled HTTP responses. API tests replace the provider transport and validate requests without using credentials. Real email delivery and deployment remain unverified.
+The miniature monitor and expanded project interface use the **same published content**. Changing a project in the dashboard updates both views.
 
-`qa/sections-review.html` contains desktop/mobile screenshots, sampled entrance/return frames, and the browser recording for Journey, Resume, Contact and Notes. Refresh these with `node scripts/capture-sections.cjs` while the dev server runs. The objects deliberately transition from baked room pixels to readable interactive views; no seamless artwork match is claimed.
+## Small details that matter
 
-## Camera and rush effect
+- A continuous camera moves toward each object, with short pixel speed lines during the zoom.
+- The lamp plays the supplied lighting transition; switching it off is immediate. This branch also lights it automatically after **3.5 seconds of visible room time**, once loading finishes. Manual switching takes priority.
+- A small parrot breathes, blinks and occasionally preens at **8 FPS**. The cat reacts to the lamp and petting through localized overlays.
+- Indoor rain, object clicks, paper sounds and a cat purr have separate ambience/effect volume controls. Sound defaults on, starts after a user interaction and remembers a mute preference.
+- Pixel cursors change for clickable objects, petting, dragging and genuine waiting. Text inputs retain the normal text cursor.
+- Keyboard navigation, visible focus, Escape / Back, deep links, mobile shortcuts and reduced-motion behavior are supported.
 
-The selected A camera is now the only entrance: continuous movement with a brief approach, acceleration and a gentle landing. Entrance duration remains 560 ms on desktop and 420 ms on phones. The return is unchanged. The stepped B camera has been removed; old camera query parameters no longer select a different animation.
+## ⚙️ Under the hood
 
-Six tapered pixel streaks (four on phones) travel outward from the projected monitor centre during the fast section, then fade before landing. The shared effect uses longer, thicker warm-white/cyan strokes and holds its peak brightness for about 110 ms on desktop / 84 ms on phones so it registers during a normal viewing. They remain at the edges, with no extra particles or landing flash. Their geometry is calculated once per entrance; the browser animates transforms and opacity. Reduced motion skips the camera and streaks together.
+```text
+Public studio                      Owner dashboard
+      │                                  │
+      │ GET /api/content                 │ authenticated edits
+      ▼                                  ▼
+Published snapshot              Private draft → Publish
+      └─────────────────┬────────────────┘
+                        ▼
+                 Neon PostgreSQL
 
-The former `/qa/camera-comparison.html` URL redirects to the selected studio. `?reference=1` is a localhost-only screenshot aid that freezes the approved first frame; normal navigation still captures the current live video frame.
+Images / PDFs → private Vercel Blob → public only when published
+Contact form  → validated API → rate limits → Resend → owner inbox
+```
 
-## Validation and review
+The frontend uses **HTML, CSS and JavaScript** with the browser's Web Animations API. One room coordinate system keeps the video, monitor overlays, hotspots and camera targets aligned across viewport sizes.
 
-Run `npm install`, then `npm test`. Playwright is the only development dependency. Tests use the installed Google Chrome browser (`channel: chrome`). The test server uses Python. No frontend build step is needed.
+The backend runs as five Vercel Node functions. Better Auth handles the owner session; public sign-up is disabled. Drafts stay private, stale edits are rejected, and uploads become publicly readable only when published content references them.
 
-`qa/review.html` shows the current smooth camera's browser recording and screenshots. Run `node scripts/capture-review.cjs` while the dev server is running to refresh `qa/smooth-rush-review.webm`.
+Journey grows through the dashboard: add a chapter, optional photo, story and display order, then save and publish. The current limit is **100 milestones**, with **six pins per board page**. Missing photos use small pixel document cards.
 
-`qa/about-review.html` shows the About Me entrance and return in dark and lit rooms, plus desktop, tablet and phone screenshots. Refresh its recording with `node scripts/capture-about.cjs`.
+## 🛠️ Tech stack
 
-`qa/effect-review.html` compares the earlier and updated streak strength at matching Projects animation times, with desktop and phone frames and links to both current recordings.
+<p>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111" alt="JavaScript">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+</p>
 
-Checks cover unchanged asset hashes, actual lighting playback, three shared cards, keyboard focus, Escape and browser history, deep-link refresh, empty/error/draft data, duplicate clicks, navigation and resizing during entry, reduced motion, and a native touch swipe. Camera checks sample rendered transforms, outward streak movement, edge placement and disappearance before landing. Screenshots cover 1440×900, 1920×1080, 768×1024 and 390×844, plus DPR 1.25 and 2. These DPR checks do not represent manually changing Chrome's toolbar zoom to 125%.
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Neon-00E599?style=for-the-badge&logo=neon&logoColor=111111" alt="Neon">
+  <img src="https://img.shields.io/badge/Better_Auth-111111?style=for-the-badge&logo=betterauth&logoColor=white" alt="Better Auth">
+  <img src="https://img.shields.io/badge/Vercel-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/Resend-111111?style=for-the-badge&logo=resend&logoColor=white" alt="Resend">
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright">
+</p>
 
-`qa/camera-timing.json` contains browser requestAnimationFrame samples. Screenshot runs deliberately pause the animation; only the final uninterrupted entry is appropriate for timing interpretation. Measurements describe this test host and browser, not a low-end device benchmark. The rendered frames and recording are provided for visual review; pixel perfection and a seamless handoff are not claimed.
+## 🚀 Running locally
 
-For local calibration, open `/?calibrate=1`. The outlines are disabled by default and unavailable on non-local hostnames. `?qa=1` exposes timing data only on localhost.
+Requirements: Node.js 22 or later, Python 3 for the static preview, and Google Chrome for the browser tests.
+
+```bash
+git clone https://github.com/vedanshmehrotra/Potfolio-Site.git
+cd Potfolio-Site
+npm ci
+npm run dev
+```
+
+Open **http://127.0.0.1:4173/**. This preview uses sample content and does not connect to the private database or deliver messages.
+
+For the full CMS, configure a separate development database, auth settings and private media store in `.env.local`, following [CMS setup](CMS_SETUP.md). Then run:
+
+```bash
+npm run db:migrate
+npm run dev:cms
+```
+
+Open **http://127.0.0.1:4180/**; the owner editor is at **/admin**. Never reuse production data for integration tests. Credentials belong in local environment files or Vercel settings.
+
+## 🧪 Verification
+
+```bash
+npm run test:unit
+npm test
+```
+
+The tests cover content validation, draft isolation, contact validation, video hashes, camera behavior, navigation, audio, localized animal animations, mobile layouts and accessibility interactions. Playwright uses the installed Chrome browser.
+
+Real CMS checks are separate from the static frontend tests. [CMS setup](CMS_SETUP.md) explains their development-only environment requirements. [Journey and lamp verification](qa/journey-release/VERIFICATION.md) records the latest checks; earlier project presentation and production evidence is in [the content report](qa/content/PRESENTATION_VERIFICATION.md).
+
+## 📁 Repository layout
+
+```text
+Potfolio-Site/
+├── index.html, app.js              # Studio, camera and monitor interfaces
+├── sections.js, sections.css       # Journey, journal, shelf and contact
+├── audio.js, cursor.js             # Sound and contextual pixel cursors
+├── cat.js, parrot.js               # Localized animal sprites
+├── assets/                        # Room images, fonts, sprites and project media
+├── admin/                         # Owner content editor
+├── api/, server/                  # Vercel entry points and backend services
+├── db/                            # Versioned database migrations
+├── content/                       # Reviewed portfolio content bundle
+├── scripts/                       # Build, maintenance and verification tools
+├── tests/                         # Node and Playwright checks
+└── docs/screenshots/              # README browser captures
+```
+
+## Notes
+
+The live portfolio is on Vercel. The latest Journey refinement and automatic lamp behavior are prepared in this branch; the custom domain is pending GitHub Education approval.
+
+- [Implementation notes](STUDIO_IMPLEMENTATION.md) — coordinate mapping, camera, media and review workflow.
+- [CMS setup](CMS_SETUP.md) — database, owner login, publishing, uploads and email.
+- [Interaction notes](STUDIO_INTERACTION_NOTES.md) — approved cursor, lamp, sound and Journey behavior.
+- [Sound credits](assets/audio/CREDITS.md) · [Tiny5 font license](assets/OFL-Tiny5.txt).

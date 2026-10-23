@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Parrot breathing and preening — prototype</title>
+  <style>
+    @font-face{font-family:pixel;src:url('../assets/Tiny5-Regular.ttf')}
+    *{box-sizing:border-box}html,body{height:100%;margin:0;background:#07121d;color:#eadfc7;font:18px pixel,monospace}
+    body{display:flex;flex-direction:column}header{padding:10px 16px;border-bottom:2px solid #49606a;flex:none}
+    h1{font-size:22px;font-weight:400;margin:0 18px 0 0;display:inline-block}
+    nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}button,a{font:inherit;color:inherit}
+    button{border:1px solid #72816e;background:#152a30;padding:5px 10px;cursor:pointer;box-shadow:2px 2px #03080e}
+    button:hover{background:#2b4444}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #f0cb80;outline-offset:3px}
+    button:disabled{opacity:.5;cursor:default}p{margin:8px 0 0;color:#afbdb8;line-height:1.2}
+    #preview-area{position:relative;flex:1;min-height:0}iframe{border:0;width:100%;height:100%;display:block}
+    #closeup{position:absolute;right:16px;bottom:16px;width:min(568px,calc(100% - 32px));border:2px solid #87907d;background:#07121d;padding:8px;box-shadow:4px 4px #02070c}
+    #closeup canvas{width:100%;image-rendering:pixelated;display:block;background:#081726}
+    #closeup p{margin:4px 0 8px}#scrub{width:min(220px,60vw);vertical-align:middle}
+    #load-error{color:#f0bb85}[hidden]{display:none!important}
+    @media(max-width:600px){header{padding:8px}h1{font-size:19px}nav{gap:6px}button{padding:4px 7px}p{font-size:16px}#closeup{bottom:75px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Parrot review controls">
+      <h1>PARROT / 8 FPS</h1>
+      <button id="preen" disabled>Preen now</button>
+      <button id="pause" aria-pressed="false" disabled>Pause</button>
+      <button id="lamp" disabled>Toggle lamp</button>
+      <button id="show-closeup" aria-expanded="false" aria-controls="closeup" disabled>Close-up</button>
+      <button id="compare" aria-pressed="false" disabled>Hide parrot</button>
+      <a href="../">Main studio</a>
+      <a href="./parrot/breathing-preening.webm" target="_blank" rel="noopener">Recorded sample</a>
+    </nav>
+    <p>Approved parrot is in the main studio · Same sprite and motion · Original room artwork preserved.</p>
+    <p id="status" role="status">Loading original studio and isolated sprite…</p>
+    <p id="load-error" role="alert" hidden></p>
+  </header>
+  <main id="preview-area">
+    <iframe id="review-studio" title="Approved studio and parrot" src="about:blank"></iframe>
+    <section id="closeup" aria-label="Parrot close-up and frame inspection" hidden>
+      <canvas id="detail" width="142" height="100" aria-label="Magnified parrot on the actual monitor bezel" role="img"></canvas>
+      <p>Same room pixels, magnified. No additional feather detail.</p>
+      <label for="scrub">Inspect pose <input id="scrub" type="range" min="0" max="15" value="0"><output id="pose" for="scrub">0</output></label>
+    </section>
+  </main>
+  <script type="module" src="./parrot/review-page.js"></script>
+</body>
+</html>

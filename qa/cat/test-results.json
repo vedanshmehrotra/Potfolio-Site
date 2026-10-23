@@ -1,0 +1,868 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Potfolio Website\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/cat-prototype.spec.cjs",
+      "tests/parrot-integration.spec.cjs",
+      "tests/parrot-prototype.spec.cjs",
+      "tests/studio.spec.cjs",
+      "--grep",
+      "Experimental cat|Actual lamp transition|Real pet hotspot|Reaction pixels|Both sequences|Reduced motion, keyboard review|Public studio|missing decorative|Approved parrot|Breathing|Transparent poses|Lighting follows|Project zoom freezes|Pause, keyboard|Matched room|locked video bytes|lamp plays",
+      "--reporter=list,json",
+      "--output=test-results/animal-integration"
+    ],
+    "configFile": "D:\\Potfolio Website\\playwright.config.cjs",
+    "rootDir": "D:/Potfolio Website/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Potfolio Website/test-results/animal-integration",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/Potfolio Website/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Potfolio Website\\test-results\\animal-integration",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\Potfolio Website\\tests",
+        "snapshotDir": "D:\\Potfolio Website\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "video": "on",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "python -m http.server 4173 --bind 127.0.0.1",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "cat-prototype.spec.cjs",
+      "file": "cat-prototype.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Experimental cat is absent from the main studio; resting review cat is untouched",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2743,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:51:48.148Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Experimental-01157-ing-review-cat-is-untouched\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-8e9ea7692f00875a511f",
+          "file": "cat-prototype.spec.cjs",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "Actual lamp transition triggers a bounded eight-FPS notice and returns to the original cat",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4957,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:51:51.477Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Actual-lamp--2a812-returns-to-the-original-cat\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-53e136d8907764f53458",
+          "file": "cat-prototype.spec.cjs",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "Real pet hotspot keeps the purr and prevents stacked visual reactions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6686,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:51:56.471Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Real-pet-hot-f08f9-ts-stacked-visual-reactions\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-6a5608df3e8ff45a0f2f",
+          "file": "cat-prototype.spec.cjs",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Reaction pixels stay inside the head and leave the room, paws, body and tail unchanged",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4004,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7170\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7170\u001b[39m\n    at D:\\Potfolio Website\\tests\\cat-prototype.spec.cjs:62:77",
+                    "location": {
+                      "file": "D:\\Potfolio Website\\tests\\cat-prototype.spec.cjs",
+                      "column": 77,
+                      "line": 62
+                    },
+                    "snippet": "  60 |     return {changed,outside,protectedPixels};\n  61 |   },{before:before.toString('base64'),after:after.toString('base64'),box:{x:bounds.x-iframeBounds.x,y:bounds.y-iframeBounds.y,width:bounds.width,height:bounds.height}});\n> 62 |   expect(comparison.changed).toBeGreaterThan(30);expect(comparison.outside).toBe(0);expect(comparison.protectedPixels).toBe(0);\n     |                                                                             ^\n  63 |   await testInfo.attach('cat-rendered-pixel-check',{body:JSON.stringify(comparison),contentType:'application/json'});\n  64 | });\n  65 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Potfolio Website\\tests\\cat-prototype.spec.cjs",
+                        "column": 77,
+                        "line": 62
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7170\u001b[39m\n\n  60 |     return {changed,outside,protectedPixels};\n  61 |   },{before:before.toString('base64'),after:after.toString('base64'),box:{x:bounds.x-iframeBounds.x,y:bounds.y-iframeBounds.y,width:bounds.width,height:bounds.height}});\n> 62 |   expect(comparison.changed).toBeGreaterThan(30);expect(comparison.outside).toBe(0);expect(comparison.protectedPixels).toBe(0);\n     |                                                                             ^\n  63 |   await testInfo.attach('cat-rendered-pixel-check',{body:JSON.stringify(comparison),contentType:'application/json'});\n  64 | });\n  65 |\n    at D:\\Potfolio Website\\tests\\cat-prototype.spec.cjs:62:77"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:03.191Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Reaction-pix-30a44-aws-body-and-tail-unchanged\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Reaction-pix-30a44-aws-body-and-tail-unchanged\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Reaction-pix-30a44-aws-body-and-tail-unchanged\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Reaction-pix-30a44-aws-body-and-tail-unchanged\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Potfolio Website\\tests\\cat-prototype.spec.cjs",
+                    "column": 77,
+                    "line": 62
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6041826051793bcdacee-491d4699be098cc8bd26",
+          "file": "cat-prototype.spec.cjs",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "Both sequences clear all local pixels after completion and pause over the Projects zoom",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10161,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:09.944Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Both-sequenc-669e7-ause-over-the-Projects-zoom\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-ec9ebcfe465351f848f1",
+          "file": "cat-prototype.spec.cjs",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "Reduced motion, keyboard review controls and narrow layouts remain usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2745,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:20.556Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\cat-prototype-Reduced-moti-300f6-arrow-layouts-remain-usable\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-2ee2ebcb9f73797cf3c4",
+          "file": "cat-prototype.spec.cjs",
+          "line": 76,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parrot-integration.spec.cjs",
+      "file": "parrot-integration.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Public studio loads the approved parrot without exposing QA controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3276,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:23.358Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-integration-Public--f1602-ithout-exposing-QA-controls\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "04439688c56f4cb838a4-1b561f7fc29e30f25367",
+          "file": "parrot-integration.spec.cjs",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "A missing decorative parrot asset leaves studio navigation working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3136,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:26.663Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-integration-A-missi-4ee37-s-studio-navigation-working\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "04439688c56f4cb838a4-8d6cfa14c804cec3ac92",
+          "file": "parrot-integration.spec.cjs",
+          "line": 15,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parrot-prototype.spec.cjs",
+      "file": "parrot-prototype.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Approved parrot loads in the main studio and the review reuses exactly one instance",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1864,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:29.848Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-prototype-Approved--2f640-reuses-exactly-one-instance\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-f4d8ba8a1679d761cc6b",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "Breathing advances at eight ticks per second and a complete preen returns to rest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7076,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:31.743Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-prototype-Breathing-1f957-plete-preen-returns-to-rest\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-75f0052dafed37a4215f",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "Transparent poses keep the gripping feet registered on the bezel without a rectangular patch",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1497,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:38.849Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-prototype-Transpare-37f2f-without-a-rectangular-patch\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-4e9a66f737aa959a250c",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "Lighting follows the real lamp and sprites share the room transform on desktop and mobile",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6589,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:40.379Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-prototype-Lighting--2806a-sform-on-desktop-and-mobile\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-f9ea7060b2d488171b12",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "Project zoom freezes the current pose and reverse navigation resumes it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3955,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:47.004Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-prototype-Project-z-b889b-verse-navigation-resumes-it\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-1e6a013e367e20d316b7",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "Pause, keyboard controls, reduced motion and comparison remain usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3173,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:50.996Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-prototype-Pause-key-709db-nd-comparison-remain-usable\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-2ca5fd56c5260e3363ec",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "Matched room frames have no changed pixels outside the isolated parrot canvas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:54.203Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "rendered-pixel-comparison",
+                      "contentType": "application/json",
+                      "body": "eyJjaGFuZ2VkIjoxMzA3LCJvdXRzaWRlIjowfQ=="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\parrot-prototype-Matched-r-2918d--the-isolated-parrot-canvas\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-ea94b6da2d52ae3b55a6",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 112,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "studio.spec.cjs",
+      "file": "studio.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "locked video bytes are unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:57.403Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-eb0fde9d6f056617b56b",
+          "file": "studio.spec.cjs",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "lamp plays the supplied clip, hands off to lit loop, and survives Projects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5994,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T09:52:57.436Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\animal-integration\\studio-lamp-plays-the-supp-f1b32--loop-and-survives-Projects\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-859c56225e4987dc3a29",
+          "file": "studio.spec.cjs",
+          "line": 34,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T09:51:47.121Z",
+    "duration": 77490.746,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

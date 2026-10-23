@@ -1,0 +1,33 @@
+{
+  "deck": "C:/Users/vedan/Downloads/SIP Presentation Vedansh.pptx",
+  "factsUsed": [
+    "Commit SHA image tags",
+    "Health verification and stable-image rollback",
+    "IAM/OIDC for GitHub Actions",
+    "Parameter Store configuration",
+    "CloudWatch monitoring and SNS alerts"
+  ],
+  "files": [
+    {
+      "source": "C:/Users/vedan/AppData/Local/Temp/codex-clipboard-ba73beb2-df26-4de5-8ee7-4c947467e4b9.png",
+      "asset": "assets/projects/resolveflow-audit.png",
+      "slide": null,
+      "sha256": "5f9766d77f608c735f7090bf29e192b9012fb65e246e27ab8d0b5ca8f1829527",
+      "unchanged": true
+    },
+    {
+      "source": "tmp/sip-review/image18.png",
+      "asset": "assets/projects/cicd-internship-overview.png",
+      "slide": 6,
+      "sha256": "16eea528fbbce20f8ed1da26b882fc955cb51e24c1639714c5db0455e857cf3a",
+      "unchanged": true
+    },
+    {
+      "source": "tmp/sip-review/image28.png",
+      "asset": "assets/projects/cicd-internship-workflow.png",
+      "slide": 8,
+      "sha256": "1815cf8f720ed9114f18f2c58cebd57810e32921b1865b27f79ab2af6336d26a",
+      "unchanged": true
+    }
+  ]
+}

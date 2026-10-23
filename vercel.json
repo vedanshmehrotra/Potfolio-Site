@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "node scripts/prepare-deployment.cjs",
+  "installCommand": "npm ci --omit=dev",
+  "outputDirectory": "public",
+  "rewrites": [
+    {"source":"/api/auth/:path*","destination":"/api/auth?authPath=:path*"},
+    {"source":"/admin","destination":"/admin/index.html"}
+  ]
+}

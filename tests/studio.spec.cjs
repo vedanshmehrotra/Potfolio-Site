@@ -81,7 +81,12 @@ test('keyboard focus stays in Projects and Escape returns detail then room', asy
   await expect(page.locator('#projects-title')).toBeFocused();
   expect(await page.locator('#scene-viewport').evaluate(el=>el.inert)).toBe(true);
   await page.keyboard.press('Shift+Tab');
+  await expect(page.locator('#sound-settings-toggle')).toBeFocused();
+  await page.keyboard.press('Shift+Tab');await expect(page.locator('#sound-toggle')).toBeFocused();
+  await page.keyboard.press('Shift+Tab');
   await expect(page.getByRole('button',{name:'Next project',exact:true})).toBeFocused();
+  await page.keyboard.press('Tab');await expect(page.locator('#sound-toggle')).toBeFocused();
+  await page.keyboard.press('Tab');await expect(page.locator('#sound-settings-toggle')).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(page.getByRole('button',{name:'Back to studio',exact:true})).toBeFocused();
   await page.keyboard.press('ArrowRight');
@@ -157,7 +162,7 @@ test('duplicate activation, Back during entry and resize cannot strand the contr
   expect(coverage.width).toBeGreaterThanOrEqual(767); expect(coverage.height).toBeGreaterThanOrEqual(1023);
 });
 
-test('mobile fills the screen, pans the room, swipes cards and returns', async ({page}) => {
+test('mobile fills the screen, pans the room, swipes cards and returns', async ({page},testInfo) => {
   await page.setViewportSize({width:390,height:844}); await ready(page);
   const touch = await page.context().newCDPSession(page);
   await touch.send('Emulation.setTouchEmulationEnabled',{enabled:true});
@@ -180,9 +185,9 @@ test('mobile fills the screen, pans the room, swipes cards and returns', async (
     const box=await page.locator('#expanded-stage .pixel-card.is-selected').boundingBox(); return Math.abs(box.x+box.width/2-195);
   }).toBeLessThan(15);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
-  await page.screenshot({path:'qa/mobile-projects.png'});
+  await page.screenshot({path:testInfo.outputPath('mobile-projects.png')});
   await page.keyboard.press('Escape'); await expect(page.locator('#app')).toHaveAttribute('data-state','room');
-  await page.screenshot({path:'qa/mobile-room.png'});
+  await page.screenshot({path:testInfo.outputPath('mobile-room.png')});
 });
 
 test('empty and failed data have explicit states; drafts are not shown', async ({page}) => {
@@ -198,16 +203,16 @@ test('empty and failed data have explicit states; drafts are not shown', async (
   await expect(page.locator('#monitor-live')).not.toContainText('Secret draft');
 });
 
-test('save alignment and authored transition frames; measure an uninterrupted entry', async ({page,browser}) => {
+test('save alignment and authored transition frames; measure an uninterrupted entry', async ({page,browser},testInfo) => {
   for(const [width,height] of [[1440,900],[1920,1080],[768,1024]]) {
     await page.setViewportSize({width,height}); await ready(page); await settleVideo(page);
-    await page.screenshot({path:`qa/room-${width}x${height}.png`});
+    await page.screenshot({path:testInfo.outputPath(`room-${width}x${height}.png`)});
     const rects=await page.evaluate(()=>{
       const a=document.querySelector('#monitor-live').getBoundingClientRect(),b=document.querySelector('#monitor-hotspot').getBoundingClientRect();
       return {screen:{x:a.x,y:a.y,w:a.width,h:a.height},hotspot:{x:b.x,y:b.y,w:b.width,h:b.height}};
     });
     expect(rects.screen).toEqual(rects.hotspot);
-    await enter(page); await page.screenshot({path:`qa/projects-${width}x${height}.png`});
+    await enter(page); await page.screenshot({path:testInfo.outputPath(`projects-${width}x${height}.png`)});
   }
   await page.setViewportSize({width:1440,height:900}); await ready(page); await settleVideo(page);
   await page.locator('#monitor-hotspot').click();
@@ -215,26 +220,26 @@ test('save alignment and authored transition frames; measure an uninterrupted en
     await page.evaluate(time=>{
       for(const a of document.getAnimations()) {a.pause();a.currentTime=time;}
     },time);
-    await page.screenshot({path:`qa/entry-${time}ms.png`});
+    await page.screenshot({path:testInfo.outputPath(`entry-${time}ms.png`)});
   }
   await page.evaluate(()=>document.getAnimations().forEach(a=>a.play()));
   await expect(page.locator('#app')).toHaveAttribute('data-state','projects');
   await page.keyboard.press('Escape');
   for (const time of [160,330]) {
     await page.evaluate(time=>{for(const a of document.getAnimations()) {a.pause();a.currentTime=time;}},time);
-    await page.screenshot({path:`qa/exit-${time}ms.png`});
+    await page.screenshot({path:testInfo.outputPath(`exit-${time}ms.png`)});
   }
   await page.evaluate(()=>document.getAnimations().forEach(a=>a.play()));
   await expect(page.locator('#app')).toHaveAttribute('data-state','room');
-  await page.screenshot({path:'qa/exit-room.png'});
+  await page.screenshot({path:testInfo.outputPath('exit-room.png')});
   await enter(page);
   const runs=await page.evaluate(()=>window.__studioDiagnostics.cameraRuns);
-  fs.writeFileSync('qa/camera-timing.json',JSON.stringify(runs,null,2));
+  fs.writeFileSync(testInfo.outputPath('camera-timing.json'),JSON.stringify(runs,null,2));
   expect(runs.at(-1).frameGaps.length).toBeGreaterThan(8);
   expect(await page.locator('#dark-video').evaluate(v=>v.paused)).toBe(true);
   for(const dpr of [1.25,2]) {
     const context=await browser.newContext({viewport:{width:1440,height:900},deviceScaleFactor:dpr});
     const retina=await context.newPage(); await ready(retina); await settleVideo(retina);
-    await retina.screenshot({path:`qa/monitor-dpr-${dpr}.png`}); await context.close();
+    await retina.screenshot({path:testInfo.outputPath(`monitor-dpr-${dpr}.png`)}); await context.close();
   }
 });

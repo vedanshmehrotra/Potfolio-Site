@@ -3,9 +3,21 @@
   "private": true,
   "scripts": {
     "dev": "python -m http.server 4173 --bind 127.0.0.1",
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:unit": "node --test tests/*.test.cjs",
+    "dev:cms": "node --env-file=.env.local scripts/dev-cms.cjs",
+    "db:migrate": "node --env-file=.env.local scripts/migrate.cjs",
+    "owner:setup": "node --env-file=.env.local scripts/bootstrap-owner.cjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2",
+    "@vercel/functions": "3.10.3",
+    "better-auth": "1.7.12",
+    "jose": "6.2.13",
+    "pg": "8.23.1",
+    "zod": "4.6.7"
   }
 }

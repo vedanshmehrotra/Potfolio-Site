@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Anonymous draft reads, admin reads/writes, uploads and public registration are denied",
+    "Structured project highlights, process steps and engineering notes survive real owner editing and saved draft reads",
+    "Real owner login, five-section load, persisted private draft, revision conflict and cross-origin write rejection",
+    "Real private Blob upload, owner-only draft download, atomic publish, draft exclusion and published media access"
+  ],
+  "errors": [],
+  "passed": false,
+  "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('#app')\nExpected: \"true\"\nReceived: \"\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('#app') with timeout 5000ms\n  - waiting for locator('#app')\n    14 × locator resolved to <main id=\"app\" data-lamp=\"dark\" data-state=\"room\" data-camera=\"smooth\" data-lamp-discovery=\"true\">…</main>\n       - unexpected value \"null\"\n\n    at captureRawStack (D:\\Potfolio Website\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (D:\\Potfolio Website\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toHaveAttribute (D:\\Potfolio Website\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at verify (D:\\Potfolio Website\\scripts\\verify-cms.cjs:51:105)"
+}

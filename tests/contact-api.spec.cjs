@@ -1,5 +1,7 @@
 const {test,expect}=require('@playwright/test');
-const handler=require('../api/contact.js');
+// Only the provider/queue boundary is replaced here. The real database-backed
+// delivery, deduplication and rate limits are checked by verify-cms.cjs.
+const handler=require('../api/contact.js').createHandler(async(req,{name,email,message})=>require('../server/mail.cjs').sendMail({subject:'Portfolio / new message',text:`Name: ${name}\n\n${message}`,replyTo:email||undefined}));
 const keys=['CONTACT_ENABLED','RESEND_API_KEY','CONTACT_FROM','CONTACT_TO','CONTACT_ORIGIN'];
 let previous,originalFetch,calls;
 test.beforeEach(()=>{

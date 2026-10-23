@@ -1,0 +1,168 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Potfolio Website\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/cat-prototype.spec.cjs",
+      "--grep",
+      "Reaction pixels",
+      "--reporter=list,json",
+      "--output=test-results/cat-pixel-rerun"
+    ],
+    "configFile": "D:\\Potfolio Website\\playwright.config.cjs",
+    "rootDir": "D:/Potfolio Website/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Potfolio Website/test-results/cat-pixel-rerun",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/Potfolio Website/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Potfolio Website\\test-results\\cat-pixel-rerun",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\Potfolio Website\\tests",
+        "snapshotDir": "D:\\Potfolio Website\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "video": "on",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "python -m http.server 4173 --bind 127.0.0.1",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "cat-prototype.spec.cjs",
+      "file": "cat-prototype.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Reaction pixels stay inside the head and leave the room, paws, body and tail unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3926,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:00:03.612Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "cat-rendered-pixel-check",
+                      "contentType": "application/json",
+                      "body": "eyJjaGFuZ2VkIjoxMjE5LCJvdXRzaWRlIjowLCJwcm90ZWN0ZWRQaXhlbHMiOjAsIm91dHNpZGVTYW1wbGVzIjpbXSwiYm94Ijp7IngiOjEwMTYuMjY1NjI1LCJ5IjozNDAuNDY4NzUsIndpZHRoIjo2OC45MDYyNSwiaGVpZ2h0Ijo1OC41NjI1fX0="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\cat-pixel-rerun\\cat-prototype-Reaction-pix-30a44-aws-body-and-tail-unchanged\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-491d4699be098cc8bd26",
+          "file": "cat-prototype.spec.cjs",
+          "line": 41,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T10:00:02.771Z",
+    "duration": 5534.719,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

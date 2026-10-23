@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-labelledby="title desc">
+  <title id="title">Automated CI/CD Framework release and recovery</title>
+  <desc id="desc">GitHub Actions tests and builds a Docker image, sends it to ECR, and deploys to EC2. Health checks verify the app and database. Systems Manager Parameter Store records a stable image for rollback.</desc>
+  <rect width="900" height="440" fill="#081722"/>
+  <g fill="none" stroke="#365b70" stroke-width="2" shape-rendering="crispEdges"><path d="M24 24H876V416H24Z"/><path d="M55 87H845"/></g>
+  <g font-family="monospace" fill="#d1e5d5" font-size="18"><text x="55" y="62" fill="#e5b96e">RELEASE / RECOVERY</text><text x="845" y="62" text-anchor="end" font-size="12" fill="#8faab8">ARCHITECTURE SKETCH</text></g>
+  <g fill="#0d2638" stroke="#6dadd0" stroke-width="2" shape-rendering="crispEdges"><rect x="55" y="120" width="170" height="84"/><rect x="265" y="120" width="170" height="84"/><rect x="475" y="120" width="160" height="84"/><rect x="675" y="120" width="170" height="84"/></g>
+  <g font-family="monospace" font-size="17" text-anchor="middle" fill="#d1e5d5"><text x="140" y="153">GitHub Actions</text><text x="350" y="153">Docker image</text><text x="555" y="153">Amazon ECR</text><text x="760" y="153">Amazon EC2</text></g>
+  <g font-family="monospace" font-size="12" text-anchor="middle" fill="#90aebe"><text x="140" y="180">TEST + BUILD</text><text x="350" y="180">COMMIT TAG</text><text x="555" y="180">REGISTRY</text><text x="760" y="180">DEPLOY</text></g>
+  <g fill="none" stroke="#e5b96e" stroke-width="3" shape-rendering="crispEdges"><path d="M225 162h40m-8-6 8 6-8 6M435 162h40m-8-6 8 6-8 6M635 162h40m-8-6 8 6-8 6M760 204v48h-73m8-6-8 6 8 6"/></g>
+  <g fill="#102a2c" stroke="#8cd6ba" stroke-width="2"><rect x="475" y="230" width="212" height="70"/><rect x="55" y="230" width="340" height="70"/></g>
+  <g font-family="monospace" text-anchor="middle"><text x="581" y="258" font-size="17" fill="#d1e5d5">Health verification</text><text x="581" y="281" font-size="12" fill="#90aebe">APP / DATABASE / VERSION</text><text x="225" y="258" font-size="17" fill="#d1e5d5">SSM Parameter Store</text><text x="225" y="281" font-size="12" fill="#90aebe">LAST STABLE IMAGE VERSION</text></g>
+  <g fill="none" stroke="#8cd6ba" stroke-width="2"><path d="M475 266h-80m7-5-7 5 7 5M225 300v61h535V204m-5 7 5-7 5 7"/></g>
+  <g font-family="monospace" font-size="12" fill="#8cd6ba"><text x="405" y="252">STABLE</text><text x="346" y="385">UNHEALTHY RELEASE → RESTORE STABLE IMAGE</text></g>
+</svg>

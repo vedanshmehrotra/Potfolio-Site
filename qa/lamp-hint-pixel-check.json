@@ -1,0 +1,13 @@
+{
+  "changed_pixels": 612,
+  "changed_outside_bulb": 0,
+  "bounds": {
+    "x": 336.8789978027344,
+    "y": 410.8280334472656,
+    "width": 38.216552734375,
+    "height": 22.929931640625
+  },
+  "room_states": [
+    "dark"
+  ]
+}

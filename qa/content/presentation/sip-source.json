@@ -1,0 +1,417 @@
+{
+  "source": "C:\\Users\\vedan\\Downloads\\SIP Presentation Vedansh.pptx",
+  "slides": [
+    {
+      "slide": 1,
+      "text": [
+        "1x\t",
+        "SUMMER INTERNSHIP PROGRAM EVALUATION",
+        "STUDENT DETAILS",
+        "Vedansh Mehrotra",
+        "UID: UAI05BT22426",
+        "INTERNSHIP ROLE",
+        "Intern Trainee",
+        "COMPANY & DURATION",
+        "Think Computers\u2122",
+        "20th April 2026 \u2013 21st July 2026(3 Months)",
+        "MENTORSHIP",
+        "Industry Guide: Mr.Rajesh Kumar",
+        "Faculty Guide: Dr.Kirti Muley",
+        "AUTOMATED CI/CD DEPLOYMENT FRAMEWORK",
+        "Batch: B.Tech 3rd Year"
+      ],
+      "pictures": []
+    },
+    {
+      "slide": 2,
+      "text": [
+        "2",
+        "Company Overview",
+        "Delivers technology solutions by combining software development, information systems and engineering expertise to address organizational requirements.",
+        "Think Computers\u2122",
+        "Software Development Department",
+        "\u2022",
+        "IT consulting & software solutions across commercial environments",
+        "\u2022",
+        "Expertise in information systems, software development & engineering",
+        "\u2022",
+        "Provides custom software and IT solutions for organizations across industries",
+        "\u2022",
+        "Develops, tests and deploys software and cloud-based solutions",
+        "\u2022",
+        "Applies cloud infrastructure, automation and software engineering practices to project delivery",
+        "Location: Lucknow, India",
+        "\u2022"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image2.jpeg"
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "text": [
+        "3",
+        "Build Cloud & AWS Foundations",
+        "Develop practical understanding of AWS services, cloud infrastructure, networking, security, IAM and serverless computing.",
+        "Apply Cloud Technologies Through Projects",
+        "Deploy applications and build serverless workflows using EC2, Lambda, API Gateway, DynamoDB, SNS and CloudWatch.",
+        "Implement Docker-based CI/CD with GitHub Actions, ECR, health verification, monitoring and rollback mechanisms.",
+        "Internship Objectives",
+        "Learn DevOps & Deployment Automation"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image3.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image4.png"
+        },
+        {
+          "id": "rId4",
+          "target": "../media/image5.png"
+        },
+        {
+          "id": "rId5",
+          "target": "../media/image6.png"
+        },
+        {
+          "id": "rId6",
+          "target": "../media/image7.png"
+        },
+        {
+          "id": "rId7",
+          "target": "../media/image8.png"
+        },
+        {
+          "id": "rId8",
+          "target": "../media/image9.png"
+        },
+        {
+          "id": "rId9",
+          "target": "../media/image10.png"
+        }
+      ]
+    },
+    {
+      "slide": 4,
+      "text": [
+        "4",
+        "[Optional: Insert Team/Workflow Image Here]",
+        "Roles & Responsibilities",
+        "1",
+        "2",
+        "3",
+        "4",
+        "Cloud Infrastructure",
+        "Configure and deploy applications on AWS infrastructure",
+        "Work with EC2, networking, IAM and CloudWatch",
+        "Serverless Development",
+        "Design workflows using API Gateway, Lambda and DynamoDB",
+        "Integrate AI processing and SNS notifications",
+        "DevOps & Automation",
+        "Build Docker-based CI/CD workflows using GitHub Actions",
+        "Implement health checks, deployment validation and rollback",
+        "Testing & Engineering",
+        "Perform functional testing and deployment validation",
+        "Prepare technical documentation and incorporate review feedback"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image11.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image12.png"
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "text": [
+        "5",
+        "Internship Journey & Projects",
+        "1",
+        "2",
+        "3",
+        "4",
+        "AWS Foundations",
+        "Completed AWS Educate learning",
+        "Gained exposure to cloud fundamentals, networking, security, IAM and serverless concepts",
+        "Project 1: Cloud-Deployment URL Shortening Service",
+        "Developed and deployed a Flash-based application on Amazon EC2",
+        "Configured access, networking and monitoring using CloudWatch",
+        "Project 2: AI-Powered Serverless Log Analyzer",
+        "Build a serverless workflow using API Gateway, Lambda and DynamoDB",
+        "Integrated AI-powered log analysis with SNS notifications",
+        "Project 3: Automated CI/CD Deployment Framework",
+        "Implemented Docker-based CI/CD using GitHub Actions, ECR and EC2 ",
+        "Added health verification, monitoring and automated rollback"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image13.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image14.png"
+        },
+        {
+          "id": "rId4",
+          "target": "../media/image15.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image14.png"
+        }
+      ]
+    },
+    {
+      "slide": 6,
+      "text": [
+        "6",
+        "Automated CI/CD Deployment Framework",
+        "[Key Feature 1]: [Brief description of functionality]",
+        "[Key Feature 2]: [Brief description of functionality]",
+        "[Key Feature 3]: [Brief description of functionality]",
+        "[Security/Scale]: [Note on compliance or scalability]",
+        "Project Overview",
+        "Manual application deployment involves repetitive steps and can introduce configuration errors or failed releases. A reliable deployment process should automate testing, packaging, deployment and post-deployment validation.",
+        "[e.g., \"A cloud-native application that automates data entry and generates real-time analytics reports for management.\"]"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image16.png"
+        },
+        {
+          "id": "rId2",
+          "target": "../media/image16.png"
+        },
+        {
+          "id": "rId2",
+          "target": "../media/image16.png"
+        },
+        {
+          "id": "rId2",
+          "target": "../media/image16.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image17.png"
+        },
+        {
+          "id": "rId4",
+          "target": "../media/image14.png"
+        },
+        {
+          "id": "rId5",
+          "target": "../media/image18.png"
+        }
+      ]
+    },
+    {
+      "slide": 7,
+      "text": [
+        "7",
+        "Technologies & Tools Used",
+        "[Design as per your project, Basic structure is give here] ",
+        "[Frontend / Interface]",
+        "[e.g., React, HTML/CSS, Tailwind, Android Studio]",
+        "[Core Backend]",
+        "[e.g., Python, Node.js, FastAPI, Java Spring Boot]",
+        "[Database & Storage]",
+        "[e.g., PostgreSQL, MongoDB, Redis, AWS S3]",
+        "[AI / Analytics / Logic]",
+        "[e.g., PyTorch, TensorFlow, Pandas, LangChain]",
+        "[Hardware / Embedded]",
+        "[e.g., Raspberry Pi, ESP32, Arduino, Sensors]",
+        "[Deployment & DevOps]",
+        "[e.g., Docker, GitHub Actions, AWS EC2, Vercel]"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image19.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image20.png"
+        },
+        {
+          "id": "rId4",
+          "target": "../media/image21.png"
+        },
+        {
+          "id": "rId5",
+          "target": "../media/image22.png"
+        },
+        {
+          "id": "rId6",
+          "target": "../media/image23.png"
+        },
+        {
+          "id": "rId7",
+          "target": "../media/image24.png"
+        },
+        {
+          "id": "rId8",
+          "target": "../media/image25.png"
+        },
+        {
+          "id": "rId9",
+          "target": "../media/image14.png"
+        },
+        {
+          "id": "rId10",
+          "target": "../media/image26.png"
+        }
+      ]
+    },
+    {
+      "slide": 8,
+      "text": [
+        "8",
+        "Methodology & Workflow",
+        "[Phase 1: Planning / Design]",
+        "[Gathered requirements and designed initial database schema.]",
+        "[Phase 2: Core Development]",
+        "[Built the backend APIs and integrated the hardware components.]",
+        "[Phase 3: Testing & QA]",
+        "[Executed unit tests and optimized system for latency.]",
+        "[Phase 4: Deployment]",
+        "[Pushed to production server and monitored live metrics.]",
+        "[Insert Architecture Diagram Here]",
+        "Delete this placeholder text/box and insert your specific system architecture diagram, data flow chart, or hardware schematic in this space.",
+        "[You can add a flow chart as well]"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image27.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image28.png"
+        },
+        {
+          "id": "rId4",
+          "target": "../media/image14.png"
+        }
+      ]
+    },
+    {
+      "slide": 9,
+      "text": [
+        "9",
+        "Key Contributions & Achievements",
+        "[Please modify this page according to your project]"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image29.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image14.png"
+        },
+        {
+          "id": "rId4",
+          "target": "../media/image30.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image14.png"
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "text": [
+        "10",
+        "Challenges & Solutions",
+        "Key Challenges",
+        "Engineering Solutions",
+        "[Challenge 1 Topic]",
+        "[Briefly describe the roadblock, e.g., hardware limitation or data scarcity.]",
+        "[Challenge 2 Topic]",
+        "[Briefly describe the roadblock, e.g., legacy code integration issues.]",
+        "[Challenge 3 Topic]",
+        "[Briefly describe the roadblock, e.g., performance bottlenecks.]",
+        "[Describe how you solved Challenge 1, e.g., applied data augmentation.]",
+        "[Describe how you solved Challenge 2, e.g., refactored API endpoints.]",
+        "[Describe how you solved Challenge 3, e.g., implemented Redis caching.]"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image14.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image31.png"
+        },
+        {
+          "id": "rId2",
+          "target": "../media/image14.png"
+        }
+      ]
+    },
+    {
+      "slide": 11,
+      "text": [
+        "11",
+        "[Insert Test Analysis/Tests Graphs Here]",
+        "Delete this placeholder text/box and insert your testing analysis graphs, performance charts, evaluation metrics, or final UI screenshots into this dedicated free space.",
+        "Results & Impact Results",
+        "[Please modify this page according to your project]",
+        "[Please add the impact and well]"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image32.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image33.png"
+        },
+        {
+          "id": "rId4",
+          "target": "../media/image14.png"
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "text": [
+        "12"
+      ],
+      "pictures": [
+        {
+          "id": "rId2",
+          "target": "../media/image34.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image35.png"
+        },
+        {
+          "id": "rId3",
+          "target": "../media/image35.png"
+        },
+        {
+          "id": "rId4",
+          "target": "../media/image36.png"
+        }
+      ]
+    }
+  ]
+}

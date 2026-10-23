@@ -1,0 +1,15 @@
+{
+  "origin": "https://after-hours-portfolio-virid.vercel.app",
+  "checks": [
+    "Public studio, both animals, default sound and disabled diagnostic globals",
+    "Postgres serves all five public sections; anonymous draft/admin access and public signup are denied",
+    "Original videos, animal artwork, recordings and CV retain exact bytes",
+    "QA, environment and build tooling are not served; API suffix executes the handler without exposing source",
+    "Audio recording unlock, lamp on/off, all six section entries, shared carousel selection, case-study tabs, reverse navigation and CV download",
+    "Projects deep link and refresh"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "passed": false,
+  "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('#app')\nExpected: \"true\"\nReceived: \"\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('#app') with timeout 5000ms\n  - waiting for locator('#app')\n    14 × locator resolved to <main id=\"app\" data-lamp=\"dark\" data-state=\"room\" data-camera=\"smooth\" data-lamp-discovery=\"true\">…</main>\n       - unexpected value \"null\"\n\n    at captureRawStack (D:\\Potfolio Website\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (D:\\Potfolio Website\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toHaveAttribute (D:\\Potfolio Website\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at verify (D:\\Potfolio Website\\scripts\\verify-deployment.cjs:115:99)"
+}

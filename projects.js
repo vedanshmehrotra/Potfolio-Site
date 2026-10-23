@@ -13,6 +13,8 @@
  * @property {string} outcomes
  * @property {(string|{url:string,alt:string})[]} gallery
  * @property {{title:string,body:string}[]} [technicalNotes]
+ * @property {{title:string,body:string}[]} [highlights]
+ * @property {string[]} [flow]
  * @property {string|null} repositoryUrl
  * @property {string|null} liveUrl
  * @property {boolean} featured

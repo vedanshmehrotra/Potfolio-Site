@@ -1,0 +1,4151 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Potfolio Website\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--reporter=list,json",
+      "--output=test-results/final-animals-audio"
+    ],
+    "configFile": "D:\\Potfolio Website\\playwright.config.cjs",
+    "rootDir": "D:/Potfolio Website/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Potfolio Website/test-results/final-animals-audio",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/Potfolio Website/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Potfolio Website\\test-results\\final-animals-audio",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\Potfolio Website\\tests",
+        "snapshotDir": "D:\\Potfolio Website\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "video": "on",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "python -m http.server 4173 --bind 127.0.0.1",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "about.spec.cjs",
+      "file": "about.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "green monitor uses the shared smooth camera and returns to its exact room framing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9378,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:26:37.390Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-green-monitor-uses-t-91419-s-to-its-exact-room-framing\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-eb01b0afd1104fa1439d",
+          "file": "about.spec.cjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "keyboard enters About Me, traps focus and restores the correct monitor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5321,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:26:47.276Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-keyboard-enters-Abou-e6afc-estores-the-correct-monitor\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-35d0ac8820633f0af9bd",
+          "file": "about.spec.cjs",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "About Me deep links, refresh and history work across both monitors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11292,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:26:52.657Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-About-Me-deep-links--7245c-y-work-across-both-monitors\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-bbb67fc88581a71b1d29",
+          "file": "about.spec.cjs",
+          "line": 70,
+          "column": 1
+        },
+        {
+          "title": "About Me shares published data, filters drafts and handles load failure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5535,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:03.981Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-About-Me-shares-publ-6e2ca-ts-and-handles-load-failure\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-f8e26b5c2a50327a3684",
+          "file": "about.spec.cjs",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "About Me handles repeated activation, interrupted entry, resize and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4186,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:09.549Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-About-Me-handles-rep-446a1-y-resize-and-reduced-motion\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-e4a42e9570194cda0b05",
+          "file": "about.spec.cjs",
+          "line": 102,
+          "column": 1
+        },
+        {
+          "title": "phone About Me fallback is readable, scrolls on short screens and returns to a visible control",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3125,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:13.767Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-phone-About-Me-fallb-4615f-eturns-to-a-visible-control\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-52fd28f3fdff1375e389",
+          "file": "about.spec.cjs",
+          "line": 126,
+          "column": 1
+        },
+        {
+          "title": "portrait tablet exposes an About Me shortcut for the cropped CRT",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3058,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:16.929Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-portrait-tablet-expo-9db77-hortcut-for-the-cropped-CRT\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-1182af669fdf60dd93c8",
+          "file": "about.spec.cjs",
+          "line": 145,
+          "column": 1
+        },
+        {
+          "title": "phone shortcut keeps rush streaks moving outwards when the CRT starts off screen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1473,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:20.022Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-phone-shortcut-keeps-396d2-n-the-CRT-starts-off-screen\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-f032331ec261a7ceea48",
+          "file": "about.spec.cjs",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "capture About Me monitor alignment, camera path and return at target viewports",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:21.525Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\about-capture-About-Me-mon-fad04--return-at-target-viewports\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-fa79df8af67681ceaff6",
+          "file": "about.spec.cjs",
+          "line": 172,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "audio-lamp-validation.spec.cjs",
+      "file": "audio-lamp-validation.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Lamp hint has exactly two short bulb glows, then stays off without changing room lighting",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3390,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:31.658Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\audio-lamp-validation-Lamp-4f2ce-hout-changing-room-lighting\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "85e984f32fd61845c023-16bb6d6682ee2a44613e",
+          "file": "audio-lamp-validation.spec.cjs",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "Lamp discovery stops on hover, keyboard focus, navigation and real activation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:35.083Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\audio-lamp-validation-Lamp-83b87-igation-and-real-activation\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "85e984f32fd61845c023-8b954abcb29d7c6d5206",
+          "file": "audio-lamp-validation.spec.cjs",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Bulb remains within portrait crops and reduced motion uses a steady cue",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2583,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:40.741Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\audio-lamp-validation-Bulb-10975-ed-motion-uses-a-steady-cue\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "85e984f32fd61845c023-af51a5350e7e3438fef5",
+          "file": "audio-lamp-validation.spec.cjs",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "Contact shows app errors, never invokes native validation popovers, and retains optional email",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:43.350Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\audio-lamp-validation-Cont-e26ae--and-retains-optional-email\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "85e984f32fd61845c023-6390e49bfaa14f3a54f9",
+          "file": "audio-lamp-validation.spec.cjs",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "Inline errors survive navigation and keyboard submission on a narrow viewport",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1455,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:45.588Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\audio-lamp-validation-Inli-f1b02-ission-on-a-narrow-viewport\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "85e984f32fd61845c023-b0541ff596d34ac313f4",
+          "file": "audio-lamp-validation.spec.cjs",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "Normalized recordings, audible cue levels and full-volume combined output have useful headroom",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9689,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:47.075Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\audio-lamp-validation-Norm-43ab1-output-have-useful-headroom\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "85e984f32fd61845c023-a07a797e839d77f5a009",
+          "file": "audio-lamp-validation.spec.cjs",
+          "line": 95,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "camera-effects.spec.cjs",
+      "file": "camera-effects.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "A is the default; retired B links also use the continuous camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4827,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:27:56.815Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\camera-effects-A-is-the-de-f727b-o-use-the-continuous-camera\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-5ef5296899d9b8f3dbd1",
+          "file": "camera-effects.spec.cjs",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "projects rush streaks stay visible, travel outward and fade before landing (1440px)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2672,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:01.667Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\camera-effects-projects-ru-7c8a8-fade-before-landing-1440px-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-943f02de24663c7d2a75",
+          "file": "camera-effects.spec.cjs",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "projects rush streaks stay visible, travel outward and fade before landing (390px)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1803,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:04.377Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\camera-effects-projects-ru-627b9--fade-before-landing-390px-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-25e5a0293de87043cb23",
+          "file": "camera-effects.spec.cjs",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "about rush streaks stay visible, travel outward and fade before landing (1440px)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2624,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:06.214Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\camera-effects-about-rush--5543e-fade-before-landing-1440px-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-1ea54a1b1ef7a7067e95",
+          "file": "camera-effects.spec.cjs",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "about rush streaks stay visible, travel outward and fade before landing (390px)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1763,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:08.865Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\camera-effects-about-rush--a9fdb--fade-before-landing-390px-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-a7a41f44bdcc17a0ab70",
+          "file": "camera-effects.spec.cjs",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "interrupted and reduced-motion entrances leave no speed effects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1424,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:10.663Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\camera-effects-interrupted-619a7-nces-leave-no-speed-effects\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-e1e73543ee23c391f854",
+          "file": "camera-effects.spec.cjs",
+          "line": 83,
+          "column": 1
+        },
+        {
+          "title": "the former A/B page opens the chosen studio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1774,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:12.114Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\camera-effects-the-former-A-B-page-opens-the-chosen-studio\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-834f3b4d159717a4f9ed",
+          "file": "camera-effects.spec.cjs",
+          "line": 97,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "cat-prototype.spec.cjs",
+      "file": "cat-prototype.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Approved cat loads in the main studio; its review reuses one idle-transparent instance",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2289,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:13.949Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\cat-prototype-Approved-cat-cf198-e-idle-transparent-instance\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-4bcd1a05c9ba95e27617",
+          "file": "cat-prototype.spec.cjs",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "Actual lamp transition triggers a bounded eight-FPS notice and returns to the original cat",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4531,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:16.277Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\cat-prototype-Actual-lamp--2a812-returns-to-the-original-cat\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-53e136d8907764f53458",
+          "file": "cat-prototype.spec.cjs",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "Real pet hotspot keeps the purr and prevents stacked visual reactions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:20.858Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\cat-prototype-Real-pet-hot-f08f9-ts-stacked-visual-reactions\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-6a5608df3e8ff45a0f2f",
+          "file": "cat-prototype.spec.cjs",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "Reaction pixels stay inside the head and leave the room, paws, body and tail unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3722,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:26.619Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "cat-rendered-pixel-check",
+                      "contentType": "application/json",
+                      "body": "eyJjaGFuZ2VkIjoxMjE5LCJvdXRzaWRlIjowLCJwcm90ZWN0ZWRQaXhlbHMiOjAsIm91dHNpZGVTYW1wbGVzIjpbXSwiYm94Ijp7IngiOjEwMTYuMjY1NjI1LCJ5IjozNDAuNDY4NzUsIndpZHRoIjo2OC45MDYyNSwiaGVpZ2h0Ijo1OC41NjI1fX0="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\cat-prototype-Reaction-pix-30a44-aws-body-and-tail-unchanged\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-491d4699be098cc8bd26",
+          "file": "cat-prototype.spec.cjs",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "Both sequences clear all local pixels after completion and pause over the Projects zoom",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9510,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:30.393Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\cat-prototype-Both-sequenc-669e7-ause-over-the-Projects-zoom\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-ec9ebcfe465351f848f1",
+          "file": "cat-prototype.spec.cjs",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "Reduced motion, keyboard review controls and narrow layouts remain usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:39.932Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\cat-prototype-Reduced-moti-300f6-arrow-layouts-remain-usable\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6041826051793bcdacee-2ee2ebcb9f73797cf3c4",
+          "file": "cat-prototype.spec.cjs",
+          "line": 82,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "contact-api.spec.cjs",
+      "file": "contact-api.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Contact API rejects invalid input and remains disabled without configuration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:42.139Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be0165f93ca42453b8ce-075acb83bf39586cab44",
+          "file": "contact-api.spec.cjs",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "Contact API uses only the configured recipient and optional visitor Reply-To",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:42.176Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be0165f93ca42453b8ce-23a6f8e1b36dd8302006",
+          "file": "contact-api.spec.cjs",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Contact API rejects foreign origins and does not claim success on provider failure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:42.208Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be0165f93ca42453b8ce-26847e48871c8f720059",
+          "file": "contact-api.spec.cjs",
+          "line": 39,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "default-audio.spec.cjs",
+      "file": "default-audio.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Fresh sound preference is ON but playback waits for a real keyboard interaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2188,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:42.239Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\default-audio-Fresh-sound--683f6-a-real-keyboard-interaction\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "25c341f84421d2377383-f9cb29a7fb6511f10d38",
+          "file": "default-audio.spec.cjs",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "Muting as the first action never starts audio and the explicit preference survives reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5360,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:44.451Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\default-audio-Muting-as-th-ebff6--preference-survives-reload\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "25c341f84421d2377383-95be4e1146fdf7b162b9",
+          "file": "default-audio.spec.cjs",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "The very first cat pet still purrs once when recording decode finishes late",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2485,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:49.845Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\default-audio-The-very-fir-01d1d-ording-decode-finishes-late\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "25c341f84421d2377383-1afa9b9e6615579c9403",
+          "file": "default-audio.spec.cjs",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "Muting cancels a queued first-pet purr before the recording becomes ready",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1737,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:52.353Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\default-audio-Muting-cance-3347c-the-recording-becomes-ready\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "25c341f84421d2377383-c50909cb058a9b992052",
+          "file": "default-audio.spec.cjs",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "Approved cat works in the public studio without QA controls or QA asset requests",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:54.115Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\default-audio-Approved-cat-bff9f-ntrols-or-QA-asset-requests\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "25c341f84421d2377383-a0013ee161e3e1e955f3",
+          "file": "default-audio.spec.cjs",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "A missing cat expression leaves the original cat and section navigation usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3397,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:28:57.886Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\default-audio-A-missing-ca-e0c7c-d-section-navigation-usable\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "25c341f84421d2377383-226fd8ed65514a9407de",
+          "file": "default-audio.spec.cjs",
+          "line": 57,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "feedback.spec.cjs",
+      "file": "feedback.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Sound defaults on, waits for interaction, decodes local recordings and mutes all voices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2561,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:01.354Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Sound-defaults-on-cbe9e-rdings-and-mutes-all-voices\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-9925b68188760edfe2cc",
+          "file": "feedback.spec.cjs",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Each object uses its intended cue; journal turns only on changed chapters; hover is silent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10296,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:03.952Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Each-object-uses--8f2d1-ed-chapters-hover-is-silent\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-c1742c615c62b9c1fc7c",
+          "file": "feedback.spec.cjs",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "Purr has real audio, never stacks, and remains keyboard accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4756,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:14.274Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Purr-has-real-aud-78a67-remains-keyboard-accessible\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-5adb21f57b1f38979b82",
+          "file": "feedback.spec.cjs",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "Independent volumes and explicit mute persist; quick toggles leave one rain loop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3567,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:19.054Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Independent-volum-7da9a-toggles-leave-one-rain-loop\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-b8f3abf0fce960bc463f",
+          "file": "feedback.spec.cjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "Pending contact shows an animated hourglass and confirms sound only for accepted sends",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3551,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:22.648Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Pending-contact-s-4af69-und-only-for-accepted-sends\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-3aa63ef805b8a500a8d6",
+          "file": "feedback.spec.cjs",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "Pixel cursor sprites track the mouse, switch context, and keep text and reduced-motion fallbacks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1604,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:26.222Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Pixel-cursor-spri-584d1-nd-reduced-motion-fallbacks\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-0e3c111aef161bd95458",
+          "file": "feedback.spec.cjs",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "Sound controls remain keyboard reachable inside sections and Escape closes settings before leaving",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:27.852Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Sound-controls-re-f2467-ses-settings-before-leaving\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-52640272493a009aeb74",
+          "file": "feedback.spec.cjs",
+          "line": 108,
+          "column": 1
+        },
+        {
+          "title": "Touch has no fake cursor and mobile sound controls leave back/download actions usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2094,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:30.500Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-c5eb55020bd280066c4d",
+          "file": "feedback.spec.cjs",
+          "line": 119,
+          "column": 1
+        },
+        {
+          "title": "Recording failures and unsupported audio leave room navigation working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5709,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:32.624Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Recording-failure-1c17f-ave-room-navigation-working\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-f5b13d6672b99a9aff32",
+          "file": "feedback.spec.cjs",
+          "line": 134,
+          "column": 1
+        },
+        {
+          "title": "Visibility handler suspends all audio and resumes only when enabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2662,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:38.373Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Visibility-handle-d86cc-d-resumes-only-when-enabled\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-276196fad8de2bf92e3f",
+          "file": "feedback.spec.cjs",
+          "line": 144,
+          "column": 1
+        },
+        {
+          "title": "Missing animated sprites retain a visible fallback pointer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1991,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:41.070Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-Missing-animated--58f88--a-visible-fallback-pointer\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-c4516d495d062d09b269",
+          "file": "feedback.spec.cjs",
+          "line": 156,
+          "column": 1
+        },
+        {
+          "title": "A mouse on narrow screens uses the grab cursor and clears it when dragging ends or loses focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2274,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:43.090Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\feedback-A-mouse-on-narrow-28d9b-ragging-ends-or-loses-focus\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-3276af42848a9e8faa19",
+          "file": "feedback.spec.cjs",
+          "line": 163,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "interaction-feedback.spec.cjs",
+      "file": "interaction-feedback.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Every room object has a compact pixel label and no native title tooltip",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5844,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:45.408Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\interaction-feedback-Every-9a8c1-and-no-native-title-tooltip\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0268fc8ecfe66f32ea21-98193dc9e6ff47b6ae26",
+          "file": "interaction-feedback.spec.cjs",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Angled hit areas exclude the board margin, journal gap and phone corners",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:51.284Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\interaction-feedback-Angle-8f03b-urnal-gap-and-phone-corners\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0268fc8ecfe66f32ea21-a74f63b5c9ad9aa393f2",
+          "file": "interaction-feedback.spec.cjs",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "The approved CV downloads from the journal without changing its file bytes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3074,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:53.960Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\interaction-feedback-The-a-e2b4a-out-changing-its-file-bytes\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0268fc8ecfe66f32ea21-e6d0472d8fe41b12191e",
+          "file": "interaction-feedback.spec.cjs",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "Journey gives the board more room and keeps academic results inside chapter details",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:57.060Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\interaction-feedback-Journ-b36fa-ults-inside-chapter-details\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0268fc8ecfe66f32ea21-7faee97293248001ebc1",
+          "file": "interaction-feedback.spec.cjs",
+          "line": 60,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "lamp-and-contours.spec.cjs",
+      "file": "lamp-and-contours.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "First-visit bulb hint leaves the shade unoutlined and never turns on the room",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5000,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:29:59.279Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\lamp-and-contours-First-vi-c912f-and-never-turns-on-the-room\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-65ff4c446b740bde08b5",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "Lamp switches off in the click task and never restores its discovery contour after use",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7434,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:04.313Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\lamp-and-contours-Lamp-swi-5e615-discovery-contour-after-use\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-a6c40fe0f804a4926238",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "Portrait touch can toggle the visible lamp and does not restore its contour",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2755,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:11.778Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-93abcf655f4d722cd934",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "Reduced motion keeps both lamp directions immediate and the cue stays absent after activation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1899,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:14.562Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\lamp-and-contours-Reduced--735df-ays-absent-after-activation\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-a619bfa1cafd81441f3d",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 68,
+          "column": 1
+        },
+        {
+          "title": "Journal includes the right page and the books follow their uneven tops without clipped strokes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3517,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:16.496Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\lamp-and-contours-Journal--eebc5-ops-without-clipped-strokes\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-b085c6f754d0f92af41f",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 82,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parrot-integration.spec.cjs",
+      "file": "parrot-integration.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Public studio loads the approved parrot without exposing QA controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3416,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:20.056Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-integration-Public--f1602-ithout-exposing-QA-controls\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "04439688c56f4cb838a4-1b561f7fc29e30f25367",
+          "file": "parrot-integration.spec.cjs",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "A missing decorative parrot asset leaves studio navigation working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3778,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:23.501Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-integration-A-missi-4ee37-s-studio-navigation-working\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "04439688c56f4cb838a4-8d6cfa14c804cec3ac92",
+          "file": "parrot-integration.spec.cjs",
+          "line": 15,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parrot-prototype.spec.cjs",
+      "file": "parrot-prototype.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Approved parrot loads in the main studio and the review reuses exactly one instance",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2284,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:27.334Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-prototype-Approved--2f640-reuses-exactly-one-instance\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-f4d8ba8a1679d761cc6b",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "Breathing advances at eight ticks per second and a complete preen returns to rest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7284,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:29.650Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-prototype-Breathing-1f957-plete-preen-returns-to-rest\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-75f0052dafed37a4215f",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "Transparent poses keep the gripping feet registered on the bezel without a rectangular patch",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:36.966Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-prototype-Transpare-37f2f-without-a-rectangular-patch\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-4e9a66f737aa959a250c",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "Lighting follows the real lamp and sprites share the room transform on desktop and mobile",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7730,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:39.259Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-prototype-Lighting--2806a-sform-on-desktop-and-mobile\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-f9ea7060b2d488171b12",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "Project zoom freezes the current pose and reverse navigation resumes it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4264,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:47.019Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-prototype-Project-z-b889b-verse-navigation-resumes-it\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-1e6a013e367e20d316b7",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "Pause, keyboard controls, reduced motion and comparison remain usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:51.313Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-prototype-Pause-key-709db-nd-comparison-remain-usable\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-2ca5fd56c5260e3363ec",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "Matched room frames have no changed pixels outside the isolated parrot canvas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4662,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:54.665Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "rendered-pixel-comparison",
+                      "contentType": "application/json",
+                      "body": "eyJjaGFuZ2VkIjoxMzA3LCJvdXRzaWRlIjowfQ=="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\parrot-prototype-Matched-r-2918d--the-isolated-parrot-canvas\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a366a2a6534ff3553d34-ea94b6da2d52ae3b55a6",
+          "file": "parrot-prototype.spec.cjs",
+          "line": 112,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "sections.spec.cjs",
+      "file": "sections.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "journey shares the approved camera, restores framing and preserves both lamp states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8701,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:30:59.382Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-journey-shares-th-78691--preserves-both-lamp-states\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-7e9bbc4275c7cb6b9004",
+          "file": "sections.spec.cjs",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "journey deep link, refresh, browser navigation and interrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9325,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:31:08.114Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-journey-deep-link-4a723-ation-and-interrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-4318d13186b068641288",
+          "file": "sections.spec.cjs",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "title": "resume shares the approved camera, restores framing and preserves both lamp states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9055,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:31:17.471Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-resume-shares-the-cea06--preserves-both-lamp-states\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-9d49259978e855f33d60",
+          "file": "sections.spec.cjs",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "resume deep link, refresh, browser navigation and interrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9142,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:31:26.556Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-resume-deep-link--bb8d1-ation-and-interrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-3755ca967677793676cc",
+          "file": "sections.spec.cjs",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "title": "contact shares the approved camera, restores framing and preserves both lamp states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8857,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:31:35.733Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-contact-shares-th-d19ab--preserves-both-lamp-states\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-0540fa1010ea16bca767",
+          "file": "sections.spec.cjs",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "contact deep link, refresh, browser navigation and interrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9173,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:31:44.625Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-contact-deep-link-46ecc-ation-and-interrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-3435c653b4eb01090b89",
+          "file": "sections.spec.cjs",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "title": "bookshelf shares the approved camera, restores framing and preserves both lamp states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8017,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:31:53.833Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-bookshelf-shares--fe293--preserves-both-lamp-states\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-b5cfbe155a8409ff6b89",
+          "file": "sections.spec.cjs",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "bookshelf deep link, refresh, browser navigation and interrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8567,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:32:01.888Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-bookshelf-deep-li-efaf5-ation-and-interrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-8d8254bcd123f6e78b39",
+          "file": "sections.spec.cjs",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "title": "Journey pins work by hover, keyboard focus and touch; board remains fully visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5183,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:32:10.489Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Journey-pins-work-86d85-board-remains-fully-visible\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-8351d9270fda007c33e1",
+          "file": "sections.spec.cjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "Journey paginates CMS records and hides drafts; empty and failed loads remain navigable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1457,
+                  "error": {
+                    "message": "Error: route.fetch: connect ECONNREFUSED 127.0.0.1:4173\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:4173/content.js\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - accept-language: en-US\u001b[22m\n\u001b[2m    - referer: http://127.0.0.1:4173/?qa=1\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?0\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"Windows\"\u001b[22m\n",
+                    "stack": "Error: route.fetch: connect ECONNREFUSED 127.0.0.1:4173\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:4173/content.js\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - accept-language: en-US\u001b[22m\n\u001b[2m    - referer: http://127.0.0.1:4173/?qa=1\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?0\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"Windows\"\u001b[22m\n\n    at D:\\Potfolio Website\\tests\\sections.spec.cjs:78:32",
+                    "location": {
+                      "file": "D:\\Potfolio Website\\tests\\sections.spec.cjs",
+                      "column": 32,
+                      "line": 78
+                    },
+                    "snippet": "  76 | test('Journey paginates CMS records and hides drafts; empty and failed loads remain navigable',async({page})=>{\n  77 |   const supply=body=>page.route('**/content.js',async route=>{\n> 78 |     const response=await route.fetch();await route.fulfill({response,body:(await response.text())+'\\n'+body});\n     |                                ^\n  79 |   });\n  80 |   await supply(`window.journeyRepository={listPublished:async()=>[...Array.from({length:14},(_,i)=>({id:'m'+i,title:'Memory '+i,status:'published',sortOrder:i,summary:'Published summary',description:'A real record shape',result:i===6?'92%':null})),{id:'private',title:'Private draft',status:'draft',sortOrder:0}]};`);\n  81 |   await ready(page);await enter(page,'journey');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Potfolio Website\\tests\\sections.spec.cjs",
+                        "column": 32,
+                        "line": 78
+                      },
+                      "message": "Error: route.fetch: connect ECONNREFUSED 127.0.0.1:4173\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:4173/content.js\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - accept-language: en-US\u001b[22m\n\u001b[2m    - referer: http://127.0.0.1:4173/?qa=1\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?0\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"Windows\"\u001b[22m\n\n\n  76 | test('Journey paginates CMS records and hides drafts; empty and failed loads remain navigable',async({page})=>{\n  77 |   const supply=body=>page.route('**/content.js',async route=>{\n> 78 |     const response=await route.fetch();await route.fulfill({response,body:(await response.text())+'\\n'+body});\n     |                                ^\n  79 |   });\n  80 |   await supply(`window.journeyRepository={listPublished:async()=>[...Array.from({length:14},(_,i)=>({id:'m'+i,title:'Memory '+i,status:'published',sortOrder:i,summary:'Published summary',description:'A real record shape',result:i===6?'92%':null})),{id:'private',title:'Private draft',status:'draft',sortOrder:0}]};`);\n  81 |   await ready(page);await enter(page,'journey');\n    at D:\\Potfolio Website\\tests\\sections.spec.cjs:78:32"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Potfolio Website\\tests\\sections.spec.cjs",
+                        "column": 14,
+                        "line": 5
+                      },
+                      "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4173/?qa=1\", waiting until \"load\"\u001b[22m\n\n\n  3 | const path=require('node:path');\n  4 | const ready=async(page,query='')=>{\n> 5 |   await page.goto(`/?qa=1${query}`);\n    |              ^\n  6 |   await expect(page.locator('#app')).toHaveAttribute('data-ready','true');\n  7 | };\n  8 | const enter=async(page,name,mobile=false)=>{\n    at ready (D:\\Potfolio Website\\tests\\sections.spec.cjs:5:14)\n    at D:\\Potfolio Website\\tests\\sections.spec.cjs:81:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:32:15.707Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Journey-paginates-877d4-iled-loads-remain-navigable\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Journey-paginates-877d4-iled-loads-remain-navigable\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Journey-paginates-877d4-iled-loads-remain-navigable\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Journey-paginates-877d4-iled-loads-remain-navigable\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Potfolio Website\\tests\\sections.spec.cjs",
+                    "column": 32,
+                    "line": 78
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-4ef3dacba6ab7b3ec390",
+          "file": "sections.spec.cjs",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "Journal chapters work and a configured resume downloads from its own top right",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4818,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:32:24.083Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Journal-chapters--1f6c4-oads-from-its-own-top-right\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-937d7e5be3def75cacef",
+          "file": "sections.spec.cjs",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "Contact validates input, retains a failed draft and clears only after a confirmed response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:32:29.329Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Contact-validates-2f3e6--after-a-confirmed-response\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-4977cc0a0bcf5c6614c2",
+          "file": "sections.spec.cjs",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "Contact prevents duplicate sends and recovers when returning during an in-flight request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3214,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:32:34.275Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Contact-prevents--528f5-during-an-in-flight-request\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-ac455c96473671b182e2",
+          "file": "sections.spec.cjs",
+          "line": 134,
+          "column": 1
+        },
+        {
+          "title": "Keyboard focus includes contact fields and global sound controls, wraps, and returns to the phone",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3480,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:32:37.525Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Keyboard-focus-in-1c1c1-ps-and-returns-to-the-phone\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-cdb0b6dba0d1f3b33fbc",
+          "file": "sections.spec.cjs",
+          "line": 146,
+          "column": 1
+        },
+        {
+          "title": "All physical sections work at phone, tablet and desktop sizes, including short screens",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33376,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:32:41.048Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-All-physical-sect-e796f-zes-including-short-screens\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-9a3fd6e3715cc6ac989c",
+          "file": "sections.spec.cjs",
+          "line": 158,
+          "column": 1
+        },
+        {
+          "title": "Resize and reduced motion retain the new sections without an animated rush",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2702,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:14.456Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Resize-and-reduce-a26b7-ns-without-an-animated-rush\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-d490ddb55b253c979a6e",
+          "file": "sections.spec.cjs",
+          "line": 174,
+          "column": 1
+        },
+        {
+          "title": "Project case-study files work inside Projects and preserve the selected card",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2434,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:17.195Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Project-case-stud-c3c7f--preserve-the-selected-card\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-7152c30b58de0b75a314",
+          "file": "sections.spec.cjs",
+          "line": 184,
+          "column": 1
+        },
+        {
+          "title": "Bookshelf reads published notes, switches entries and leaves About personal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4021,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:19.662Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Bookshelf-reads-p-e6f58-s-and-leaves-About-personal\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-54fc41198b530f96a9b8",
+          "file": "sections.spec.cjs",
+          "line": 194,
+          "column": 1
+        },
+        {
+          "title": "Bookshelf filters drafts and handles a failed repository without trapping navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2963,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:23.716Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\sections-Bookshelf-filters-f4154-without-trapping-navigation\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-bae2fe6386648ed24322",
+          "file": "sections.spec.cjs",
+          "line": 207,
+          "column": 1
+        },
+        {
+          "title": "Native touch selects a Journey pin and the return stays accessible after resizing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5846,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:26.715Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-def1b071bcef48ab6896",
+          "file": "sections.spec.cjs",
+          "line": 220,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "studio.spec.cjs",
+      "file": "studio.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "locked video bytes are unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:32.633Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-eb0fde9d6f056617b56b",
+          "file": "studio.spec.cjs",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "lamp plays the supplied clip, hands off to lit loop, and survives Projects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:32.680Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-lamp-plays-the-supp-f1b32--loop-and-survives-Projects\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-859c56225e4987dc3a29",
+          "file": "studio.spec.cjs",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "three shared cards, carousel selection, details and browser Back",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3970,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:39.034Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-three-shared-cards--01972-on-details-and-browser-Back\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-9ba3ea46200206e08a9e",
+          "file": "studio.spec.cjs",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "keyboard focus stays in Projects and Escape returns detail then room",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3859,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:43.041Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-keyboard-focus-stay-cdd9b-pe-returns-detail-then-room\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-d30dc3a29f68dc08714c",
+          "file": "studio.spec.cjs",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "deep link refresh, unknown project and direct-entry Back",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3016,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:46.938Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-deep-link-refresh-u-be79d-oject-and-direct-entry-Back\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-8a48487d6cb822a40220",
+          "file": "studio.spec.cjs",
+          "line": 105,
+          "column": 1
+        },
+        {
+          "title": "reduced motion has no camera rush, paused ambient and accessible lamp handoff",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2079,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:49.989Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-reduced-motion-has--4510e-and-accessible-lamp-handoff\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-70a15acf0fcf64b2c41d",
+          "file": "studio.spec.cjs",
+          "line": 119,
+          "column": 1
+        },
+        {
+          "title": "changing motion preference during lighting and entry settles safely",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2387,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:52.114Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-changing-motion-pre-c6bcb-ng-and-entry-settles-safely\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-776e29f0cc7bb420cda4",
+          "file": "studio.spec.cjs",
+          "line": 131,
+          "column": 1
+        },
+        {
+          "title": "duplicate activation, Back during entry and resize cannot strand the controller",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4506,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:54.544Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-duplicate-activatio-3e19d-annot-strand-the-controller\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-27a20979b9feba99059b",
+          "file": "studio.spec.cjs",
+          "line": 148,
+          "column": 1
+        },
+        {
+          "title": "mobile fills the screen, pans the room, swipes cards and returns",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4540,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:33:59.095Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-mobile-fills-the-sc-41a9e-om-swipes-cards-and-returns\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-364f37a4811c4aa61039",
+          "file": "studio.spec.cjs",
+          "line": 165,
+          "column": 1
+        },
+        {
+          "title": "empty and failed data have explicit states; drafts are not shown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3788,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:34:03.672Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-empty-and-failed-da-7972a-states-drafts-are-not-shown\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-92bac65f94619c921589",
+          "file": "studio.spec.cjs",
+          "line": 193,
+          "column": 1
+        },
+        {
+          "title": "save alignment and authored transition frames; measure an uninterrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16660,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T10:34:07.500Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\final-animals-audio\\studio-save-alignment-and--5ecb8-sure-an-uninterrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-2c8bb6472d0f808becff",
+          "file": "studio.spec.cjs",
+          "line": 206,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T10:26:36.349Z",
+    "duration": 470150.914,
+    "expected": 97,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

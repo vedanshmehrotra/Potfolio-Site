@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-22T14:40:43.024Z",
+  "contactTest": {
+    "status": "sent",
+    "providerAccepted": true
+  },
+  "ownerConfirmedSignIn": true,
+  "ownerConfirmedContactInboxDelivery": true
+}

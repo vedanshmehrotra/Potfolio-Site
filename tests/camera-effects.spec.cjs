@@ -40,7 +40,7 @@ test('A is the default; retired B links also use the continuous camera',async ({
 
 for (const section of ['projects','about']) {
  for (const viewport of [{width:1440,height:900,count:6},{width:390,height:844,count:4}]) {
-  test(`${section} rush streaks stay visible, travel outward and fade before landing (${viewport.width}px)`,async ({page})=>{
+  test(`${section} rush streaks stay visible, travel outward and fade before landing (${viewport.width}px)`,async ({page},testInfo)=>{
     await page.setViewportSize(viewport);
     await ready(page);
     await pauseEntrance(page,section==='about' ? (viewport.width<=700 ? '#mobile-about' : '#about-hotspot') : '#monitor-hotspot');
@@ -71,7 +71,7 @@ for (const section of ['projects','about']) {
     });
     // Save real, paused browser frames during the strongest part of the rush.
     await scrub(page,duration*.42);
-    await page.screenshot({path:`qa/rush-${section==='about' ? 'about-' : ''}${viewport.width}px.png`});
+    await page.screenshot({path:testInfo.outputPath(`rush-${section==='about' ? 'about-' : ''}${viewport.width}px.png`)});
     await page.evaluate(()=>document.getAnimations().forEach(a=>a.play()));
     await expect(page.locator('#app')).toHaveAttribute('data-state',section);
     await expect(page.locator('#speed-lines')).toHaveCSS('opacity','0');

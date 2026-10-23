@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "A real private development token follows the library callback; the form clears its URL; foreign callback origins are rejected",
+    "Short and mismatched passwords are rejected; the real reset succeeds once and revokes existing owner sessions",
+    "The unchanged development password signs in after reset; logout works; no mail or production data was used"
+  ],
+  "errors": [],
+  "passed": true
+}

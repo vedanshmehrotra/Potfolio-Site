@@ -8,6 +8,7 @@
   <link rel="preload" href="./assets/Tiny5-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./sections.css">
+  <link rel="stylesheet" href="./feedback.css">
 </head>
 <body>
   <main id="app" data-state="room" data-lamp="dark">
@@ -18,14 +19,20 @@
         <video id="lighting-video" class="room-video" src="./after_hours_transition_clean_2s.mp4" muted playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>
         <canvas id="frozen-room" width="1672" height="942" aria-hidden="true" hidden></canvas>
         <div id="monitor-live" class="monitor-live" aria-hidden="true"></div>
-        <button id="monitor-hotspot" class="hotspot monitor-hotspot" type="button" aria-label="Open Projects on the studio monitor"></button>
+        <button id="monitor-hotspot" class="hotspot monitor-hotspot" type="button" aria-label="Open Projects on the studio monitor" data-label="Projects"></button>
         <div id="about-live" class="about-live" aria-hidden="true"></div>
-        <button id="about-hotspot" class="hotspot about-hotspot" type="button" aria-label="Open About Me on the green monitor"></button>
-        <button id="lamp-hotspot" class="hotspot lamp-hotspot" type="button" aria-label="Turn on the desk lamp" aria-pressed="false"></button>
-        <button id="journey-hotspot" class="hotspot journey-hotspot" type="button" aria-label="Open Journey on the pinned board" title="Journey"></button>
-        <button id="resume-hotspot" class="hotspot resume-hotspot" type="button" aria-label="Open Resume in the journal" title="Resume"></button>
-        <button id="contact-hotspot" class="hotspot contact-hotspot" type="button" aria-label="Open Contact on the phone" title="Contact"></button>
-        <button id="bookshelf-hotspot" class="hotspot bookshelf-hotspot" type="button" aria-label="Open Notes on the bookshelf" title="Reading & notes"></button>
+        <button id="about-hotspot" class="hotspot about-hotspot" type="button" aria-label="Open About Me on the green monitor" data-label="About me"></button>
+        <svg id="lamp-discovery-glow" class="lamp-discovery-glow" viewBox="0 0 40 24" aria-hidden="true" focusable="false" hidden>
+          <path fill="#d9984e" opacity=".24" d="M7 2h20v2h7v3h4v10h-8v5H12v-3H3v-5H0V7h7Z"/>
+          <path fill="#eac078" d="M6 5h23v4h4v6h-5v4H12v-2H6Z"/>
+          <path fill="#ffe5a0" d="M10 10h17v5h-3v3H16v-1H10Z"/>
+        </svg>
+        <button id="lamp-hotspot" class="hotspot lamp-hotspot" type="button" aria-label="Turn on the desk lamp" aria-pressed="false" data-label="Turn on lamp"></button>
+        <button id="journey-hotspot" class="hotspot journey-hotspot" type="button" aria-label="Open Journey on the pinned board" data-label="Journey"></button>
+        <button id="resume-hotspot" class="hotspot resume-hotspot" type="button" aria-label="Open Resume in the journal" data-label="Resume"></button>
+        <button id="contact-hotspot" class="hotspot contact-hotspot" type="button" aria-label="Open Contact on the phone" data-label="Contact"></button>
+        <button id="bookshelf-hotspot" class="hotspot bookshelf-hotspot" type="button" aria-label="Open Certifications and learning on the bookshelf" data-label="Certifications"></button>
+        <button id="cat-hotspot" class="hotspot cat-hotspot" type="button" aria-label="Pet the sleeping cat" data-label="Pet the cat"></button>
       </div>
     </div>
     <div class="mobile-access" id="mobile-access">
@@ -35,7 +42,7 @@
       <button id="mobile-journey" type="button">JOURNEY <span aria-hidden="true">&gt;</span></button>
       <button id="mobile-resume" type="button">RESUME <span aria-hidden="true">&gt;</span></button>
       <button id="mobile-contact" type="button">CONTACT <span aria-hidden="true">&gt;</span></button>
-      <button id="mobile-bookshelf" type="button">NOTES <span aria-hidden="true">&gt;</span></button>
+      <button id="mobile-bookshelf" type="button">CERTIFICATES <span aria-hidden="true">&gt;</span></button>
     </div>
     <section id="projects-panel" class="projects-panel" aria-label="Projects" aria-hidden="true" inert hidden>
       <div id="expanded-stage" class="expanded-stage"></div>
@@ -48,11 +55,29 @@
     <section id="object-panel" class="object-panel" aria-label="Studio section" aria-hidden="true" inert hidden></section>
     <p id="announcer" class="sr-only" role="status" aria-live="polite"></p>
     <output id="calibration" hidden></output>
+    <div id="object-hint" class="object-hint" role="tooltip" hidden></div>
   </main>
+  <aside class="sound-controls" aria-label="Studio sound">
+    <button id="sound-toggle" type="button" aria-pressed="true" aria-label="Mute studio sound">♪ SOUND ON</button>
+    <button id="sound-settings-toggle" type="button" aria-expanded="false" aria-controls="sound-settings" aria-label="Sound settings">≡</button>
+    <section id="sound-settings" class="sound-settings" aria-labelledby="sound-heading" hidden>
+      <h2 id="sound-heading">STUDIO SOUND</h2>
+      <label for="ambience-volume"><span>RAIN</span><input id="ambience-volume" type="range" min="0" max="100" value="35"><output id="ambience-value" for="ambience-volume">35</output></label>
+      <label for="effects-volume"><span>OBJECTS</span><input id="effects-volume" type="range" min="0" max="100" value="45"><output id="effects-value" for="effects-volume">45</output></label>
+      <p id="sound-status" role="status">Sound is on. Playback starts with your first click or keypress.</p>
+      <p><a href="./assets/audio/CREDITS.md" target="_blank" rel="noopener">Sound credits ↗</a></p>
+    </section>
+  </aside>
+  <div id="studio-cursor" class="studio-cursor" aria-hidden="true" hidden></div>
   <script src="./projects.js"></script>
   <script src="./about.js"></script>
   <script src="./content.js"></script>
+  <script src="./cms.js"></script>
+  <script src="./audio.js"></script>
+  <script src="./cursor.js"></script>
   <script src="./sections.js"></script>
   <script src="./app.js"></script>
+  <script type="module" src="./parrot.js"></script>
+  <script type="module" src="./cat.js"></script>
 </body>
 </html>

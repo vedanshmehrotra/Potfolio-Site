@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "database": "real isolated development Postgres",
+  "mailTransport": "controlled stub; no email sent",
+  "checks": [
+    "Persisted accepted provider result",
+    "Duplicate request sends once",
+    "Recipient stays server configured; visitor is Reply-To only",
+    "Failed delivery retained and safely retried with the same idempotency key",
+    "Durable per-client rate limit enforced"
+  ]
+}

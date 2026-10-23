@@ -1,0 +1,17 @@
+{
+  "origin": "https://after-hours-portfolio-virid.vercel.app",
+  "checks": [
+    "Public studio, both animals, default sound and disabled diagnostic globals",
+    "Postgres serves all five public sections; anonymous draft/admin access and public signup are denied",
+    "Password-reset callback reaches the library and redirects an invalid token safely to the reset page",
+    "Original videos, animal artwork, recordings and CV retain exact bytes",
+    "QA, environment and build tooling are not served; API suffix executes the handler without exposing source",
+    "Audio recording unlock, lamp on/off, all six section entries, shared carousel selection, case-study tabs, reverse navigation and CV download",
+    "Projects deep link and refresh"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "mobileReadyMs": 39159,
+  "passed": false,
+  "error": "locator.tap: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Next project', exact: true })\u001b[22m\n\n    at verify (D:\\Potfolio Website\\scripts\\verify-deployment.cjs:125:75)"
+}

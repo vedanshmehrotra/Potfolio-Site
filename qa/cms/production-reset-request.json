@@ -1,0 +1,11 @@
+{
+  "origin": "https://after-hours-portfolio-virid.vercel.app",
+  "requestedAt": "2026-10-22T14:28:39.130Z",
+  "status": 200,
+  "body": {
+    "status": true,
+    "message": "If this email exists in our system, check your email for the reset link"
+  },
+  "passed": true,
+  "inboxArrival": "Requires owner confirmation; no email contents or reset token were accessed"
+}

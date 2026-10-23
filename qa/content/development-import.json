@@ -1,0 +1,27 @@
+{
+  "target": "development",
+  "mode": "saved and published",
+  "sections": {
+    "projects": {
+      "records": 4,
+      "publicRecords": 4
+    },
+    "about": {
+      "records": 1,
+      "publicRecords": 1
+    },
+    "journey": {
+      "records": 5,
+      "publicRecords": 5
+    },
+    "resume": {
+      "records": 1,
+      "publicRecords": 1
+    },
+    "notes": {
+      "records": 11,
+      "publicRecords": 7
+    }
+  },
+  "backup": "development-before-1792736454184.json"
+}

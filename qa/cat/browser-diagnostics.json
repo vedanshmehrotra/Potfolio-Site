@@ -1,0 +1,245 @@
+{
+  "state": {
+    "ready": true,
+    "phase": "idle",
+    "frame": 0,
+    "paused": false,
+    "visible": true,
+    "reducedMotion": false,
+    "fps": 8,
+    "box": {
+      "x": 1180,
+      "y": 410,
+      "width": 80,
+      "height": 68
+    },
+    "frameCount": 20,
+    "history": [
+      {
+        "time": 554.0999999977648,
+        "phase": "notice",
+        "frame": 0
+      },
+      {
+        "time": 707.8000000007451,
+        "phase": "notice",
+        "frame": 1
+      },
+      {
+        "time": 841.8999999985099,
+        "phase": "notice",
+        "frame": 2
+      },
+      {
+        "time": 954.5,
+        "phase": "notice",
+        "frame": 3
+      },
+      {
+        "time": 1089,
+        "phase": "notice",
+        "frame": 4
+      },
+      {
+        "time": 1205,
+        "phase": "notice",
+        "frame": 5
+      },
+      {
+        "time": 1340.199999999255,
+        "phase": "notice",
+        "frame": 6
+      },
+      {
+        "time": 1453.199999999255,
+        "phase": "notice",
+        "frame": 7
+      },
+      {
+        "time": 1591.3999999985099,
+        "phase": "notice",
+        "frame": 8
+      },
+      {
+        "time": 1697.699999999255,
+        "phase": "notice",
+        "frame": 9
+      },
+      {
+        "time": 1838.3999999985099,
+        "phase": "notice",
+        "frame": 10
+      },
+      {
+        "time": 1949.8999999985099,
+        "phase": "notice",
+        "frame": 11
+      },
+      {
+        "time": 2087.39999999851,
+        "phase": "notice",
+        "frame": 12
+      },
+      {
+        "time": 2197.39999999851,
+        "phase": "notice",
+        "frame": 13
+      },
+      {
+        "time": 2339.699999999255,
+        "phase": "notice",
+        "frame": 14
+      },
+      {
+        "time": 2447.599999997765,
+        "phase": "notice",
+        "frame": 15
+      },
+      {
+        "time": 2589.5,
+        "phase": "notice",
+        "frame": 16
+      },
+      {
+        "time": 2704.89999999851,
+        "phase": "notice",
+        "frame": 17
+      },
+      {
+        "time": 2813.800000000745,
+        "phase": "notice",
+        "frame": 18
+      },
+      {
+        "time": 2931.300000000745,
+        "phase": "notice",
+        "frame": 19
+      },
+      {
+        "time": 3063.89999999851,
+        "phase": "idle",
+        "frame": 0
+      },
+      {
+        "time": 3749.300000000745,
+        "phase": "pet",
+        "frame": 0
+      },
+      {
+        "time": 3906.699999999255,
+        "phase": "pet",
+        "frame": 1
+      },
+      {
+        "time": 4033.699999999255,
+        "phase": "pet",
+        "frame": 2
+      },
+      {
+        "time": 4152.199999999255,
+        "phase": "pet",
+        "frame": 3
+      },
+      {
+        "time": 4285.39999999851,
+        "phase": "pet",
+        "frame": 4
+      },
+      {
+        "time": 4400.5,
+        "phase": "pet",
+        "frame": 5
+      },
+      {
+        "time": 4533.800000000745,
+        "phase": "pet",
+        "frame": 6
+      },
+      {
+        "time": 4642.5,
+        "phase": "pet",
+        "frame": 7
+      },
+      {
+        "time": 4786.300000000745,
+        "phase": "pet",
+        "frame": 8
+      },
+      {
+        "time": 4893.699999999255,
+        "phase": "pet",
+        "frame": 9
+      },
+      {
+        "time": 5035,
+        "phase": "pet",
+        "frame": 10
+      },
+      {
+        "time": 5142.199999999255,
+        "phase": "pet",
+        "frame": 11
+      },
+      {
+        "time": 5286,
+        "phase": "pet",
+        "frame": 12
+      },
+      {
+        "time": 5394.199999999255,
+        "phase": "pet",
+        "frame": 13
+      },
+      {
+        "time": 5534.89999999851,
+        "phase": "pet",
+        "frame": 14
+      },
+      {
+        "time": 5643.699999999255,
+        "phase": "pet",
+        "frame": 15
+      },
+      {
+        "time": 5763.599999997765,
+        "phase": "pet",
+        "frame": 16
+      },
+      {
+        "time": 5880,
+        "phase": "pet",
+        "frame": 17
+      },
+      {
+        "time": 6014.39999999851,
+        "phase": "pet",
+        "frame": 18
+      },
+      {
+        "time": 6129.89999999851,
+        "phase": "pet",
+        "frame": 19
+      },
+      {
+        "time": 6263.599999997765,
+        "phase": "idle",
+        "frame": 0
+      }
+    ]
+  },
+  "timing": {
+    "notice": {
+      "ticks": 20,
+      "meanMs": 125.11578947384106,
+      "minMs": 106.30000000074506,
+      "maxMs": 153.70000000298023
+    },
+    "pet": {
+      "ticks": 20,
+      "meanMs": 125.29473684198763,
+      "minMs": 107.19999999925494,
+      "maxMs": 157.39999999850988
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,11 @@
+{
+  "origin": "http://127.0.0.1:4180",
+  "checks": [
+    "All four CMS-backed covers, summaries, editable highlights/flows/decisions, galleries, local icons and return navigation passed. Gallery arrows, wraparound, thumbnails and keyboard focus passed.",
+    "Revised Curiosities fits the CRT; the resume includes the top-10 CGPA achievement; the seventh credential has the verified edX URL, issuer and date.",
+    "390px and 320px touch layouts passed for every project-file section, gallery controls, icons and reverse navigation, with no content-panel overflow."
+  ],
+  "pageErrors": [],
+  "failedAssets": [],
+  "passed": true
+}

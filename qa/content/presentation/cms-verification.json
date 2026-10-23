@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Anonymous draft reads, admin reads/writes, uploads and public registration are denied",
+    "Structured project highlights, process steps and engineering notes survive real owner editing and saved draft reads",
+    "Real owner login, five-section load, persisted private draft, revision conflict and cross-origin write rejection",
+    "Real private Blob upload, owner-only draft download, atomic publish, draft exclusion and published media access",
+    "Credential type, issuer and completion date survive real owner-dashboard editing and private draft storage",
+    "Browser file chooser uploads privately; nested resume chapters save; unpublishing removes public content and media access",
+    "Published CMS content reaches both monitor views, refresh persists, every section editor opens, mobile fits and logout revokes access"
+  ],
+  "errors": [],
+  "studioContentRequests": [
+    {
+      "status": 200,
+      "durationMs": 3885
+    }
+  ],
+  "studioReadyMs": 4207,
+  "passed": true
+}

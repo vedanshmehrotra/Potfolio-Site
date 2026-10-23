@@ -1,0 +1,52 @@
+{
+  "errors": [],
+  "audio": {
+    "enabled": true,
+    "state": "running",
+    "rain": true,
+    "voices": [],
+    "loaded": [
+      "purr",
+      "rain"
+    ],
+    "errors": [],
+    "volumes": {
+      "ambience": 35,
+      "effects": 45
+    },
+    "events": [
+      {
+        "name": "purr",
+        "time": 4246.5
+      },
+      {
+        "name": "click",
+        "time": 6905.800000000745
+      },
+      {
+        "name": "rush",
+        "time": 6908
+      },
+      {
+        "name": "return",
+        "time": 7561.300000000745
+      }
+    ],
+    "recordings": {
+      "purr": {
+        "rms": 0.1454737493117953,
+        "peak": 0.75,
+        "gain": 2.973092064543698,
+        "filtered": true
+      },
+      "rain": {
+        "rms": 0.13702851952297565,
+        "peak": 0.7000000000000001,
+        "gain": 2.307097909790979,
+        "filtered": true
+      }
+    },
+    "rms": 0.0394382864423026,
+    "peak": 0.12488137185573578
+  }
+}

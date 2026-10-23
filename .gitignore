@@ -4,3 +4,16 @@ playwright-report/
 .env
 .env.*
 !.env.example
+.vercel/
+/public/
+/qa/content/*-before-*.json
+/tmp/project-previews/
+/tmp/sip-review/
+/tmp/presentation-staged-*
+/.agents/
+/.npm-cache/
+/skills-lock.json
+/tmp/
+/qa/**/recordings/
+/qa/journey-release/page@*.webm
+/qa/**/*-failure.png

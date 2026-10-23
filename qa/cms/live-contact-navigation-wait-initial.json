@@ -1,0 +1,8 @@
+{
+  "origin": "https://after-hours-portfolio-virid.vercel.app",
+  "checks": [],
+  "contentRequests": [],
+  "pageErrors": [],
+  "passed": false,
+  "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://after-hours-portfolio-virid.vercel.app/?view=contact\", waiting until \"domcontentloaded\"\u001b[22m\n"
+}

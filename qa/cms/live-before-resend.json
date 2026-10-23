@@ -1,0 +1,18 @@
+{
+  "origin": "https://after-hours-portfolio-virid.vercel.app",
+  "checks": [
+    "Public studio, both animals, default sound and disabled diagnostic globals",
+    "Postgres serves all five public sections; anonymous draft/admin access and public signup are denied",
+    "Original videos, animal artwork, recordings and CV retain exact bytes",
+    "QA, environment and build tooling are not served; API suffix executes the handler without exposing source",
+    "Audio recording unlock, lamp on/off, all six section entries, shared carousel selection, case-study tabs, reverse navigation and CV download",
+    "Projects deep link and refresh",
+    "390px touch/reduced-motion navigation, inline form validation and the configured contact delivery state",
+    "Deployed Node contact function rejects unsupported methods and invalid payloads"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "mobileReadyMs": 24560,
+  "emailDelivery": "Not configured; disabled-delivery response and draft retention verified",
+  "passed": true
+}

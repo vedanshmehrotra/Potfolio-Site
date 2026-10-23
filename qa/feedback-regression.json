@@ -1,0 +1,3054 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Potfolio Website\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "D:\\Potfolio Website\\playwright.config.cjs",
+    "rootDir": "D:/Potfolio Website/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Potfolio Website/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/Potfolio Website/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Potfolio Website\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\Potfolio Website\\tests",
+        "snapshotDir": "D:\\Potfolio Website\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "video": "on",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "qa/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "python -m http.server 4173 --bind 127.0.0.1",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "about.spec.cjs",
+      "file": "about.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "green monitor uses the shared smooth camera and returns to its exact room framing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8570,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:09:35.938Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-green-monitor-uses-t-91419-s-to-its-exact-room-framing\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-eb01b0afd1104fa1439d",
+          "file": "about.spec.cjs",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "keyboard enters About Me, traps focus and restores the correct monitor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:09:45.063Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-keyboard-enters-Abou-e6afc-estores-the-correct-monitor\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-35d0ac8820633f0af9bd",
+          "file": "about.spec.cjs",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "About Me deep links, refresh and history work across both monitors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10062,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:09:50.362Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-About-Me-deep-links--7245c-y-work-across-both-monitors\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-bbb67fc88581a71b1d29",
+          "file": "about.spec.cjs",
+          "line": 70,
+          "column": 1
+        },
+        {
+          "title": "About Me shares published data, filters drafts and handles load failure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5210,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:00.465Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-About-Me-shares-publ-6e2ca-ts-and-handles-load-failure\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-f8e26b5c2a50327a3684",
+          "file": "about.spec.cjs",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "About Me handles repeated activation, interrupted entry, resize and reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4315,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:05.721Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-About-Me-handles-rep-446a1-y-resize-and-reduced-motion\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-e4a42e9570194cda0b05",
+          "file": "about.spec.cjs",
+          "line": 102,
+          "column": 1
+        },
+        {
+          "title": "phone About Me fallback is readable, scrolls on short screens and returns to a visible control",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3088,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:10.079Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-phone-About-Me-fallb-4615f-eturns-to-a-visible-control\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-52fd28f3fdff1375e389",
+          "file": "about.spec.cjs",
+          "line": 126,
+          "column": 1
+        },
+        {
+          "title": "portrait tablet exposes an About Me shortcut for the cropped CRT",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3055,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:13.215Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-portrait-tablet-expo-9db77-hortcut-for-the-cropped-CRT\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-1182af669fdf60dd93c8",
+          "file": "about.spec.cjs",
+          "line": 145,
+          "column": 1
+        },
+        {
+          "title": "phone shortcut keeps rush streaks moving outwards when the CRT starts off screen",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2581,
+                  "error": {
+                    "message": "Error: UNKNOWN: unknown error, open 'D:\\Potfolio Website\\qa\\about-mobile-entry.png'",
+                    "stack": "Error: UNKNOWN: unknown error, open 'D:\\Potfolio Website\\qa\\about-mobile-entry.png'\n    at D:\\Potfolio Website\\tests\\about.spec.cjs:167:3",
+                    "location": {
+                      "file": "D:\\Potfolio Website\\tests\\about.spec.cjs",
+                      "column": 3,
+                      "line": 167
+                    },
+                    "snippet": "  165 |   expect(start).toHaveLength(4);\n  166 |   start.forEach((s,i)=>expect((end[i].x-s.x)*(s.x-195)+(end[i].y-s.y)*(s.y-422)).toBeGreaterThan(0));\n> 167 |   await page.screenshot({path:'qa/about-mobile-entry.png'});\n      |   ^\n  168 |   await page.evaluate(()=>document.getAnimations().forEach(a=>a.play()));\n  169 |   await expect(page.locator('#app')).toHaveAttribute('data-state','about');\n  170 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Potfolio Website\\tests\\about.spec.cjs",
+                        "column": 3,
+                        "line": 167
+                      },
+                      "message": "Error: UNKNOWN: unknown error, open 'D:\\Potfolio Website\\qa\\about-mobile-entry.png'\n\n  165 |   expect(start).toHaveLength(4);\n  166 |   start.forEach((s,i)=>expect((end[i].x-s.x)*(s.x-195)+(end[i].y-s.y)*(s.y-422)).toBeGreaterThan(0));\n> 167 |   await page.screenshot({path:'qa/about-mobile-entry.png'});\n      |   ^\n  168 |   await page.evaluate(()=>document.getAnimations().forEach(a=>a.play()));\n  169 |   await expect(page.locator('#app')).toHaveAttribute('data-state','about');\n  170 | });\n    at D:\\Potfolio Website\\tests\\about.spec.cjs:167:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:16.314Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Potfolio Website\\test-results\\about-phone-shortcut-keeps-396d2-n-the-CRT-starts-off-screen\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-phone-shortcut-keeps-396d2-n-the-CRT-starts-off-screen\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Potfolio Website\\test-results\\about-phone-shortcut-keeps-396d2-n-the-CRT-starts-off-screen\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Potfolio Website\\test-results\\about-phone-shortcut-keeps-396d2-n-the-CRT-starts-off-screen\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Potfolio Website\\tests\\about.spec.cjs",
+                    "column": 3,
+                    "line": 167
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "40e400102377692714c2-f032331ec261a7ceea48",
+          "file": "about.spec.cjs",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "capture About Me monitor alignment, camera path and return at target viewports",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13041,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:21.733Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\about-capture-About-Me-mon-fad04--return-at-target-viewports\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "40e400102377692714c2-fa79df8af67681ceaff6",
+          "file": "about.spec.cjs",
+          "line": 172,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "camera-effects.spec.cjs",
+      "file": "camera-effects.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "A is the default; retired B links also use the continuous camera",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4899,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:35.326Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\camera-effects-A-is-the-de-f727b-o-use-the-continuous-camera\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-5ef5296899d9b8f3dbd1",
+          "file": "camera-effects.spec.cjs",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "projects rush streaks stay visible, travel outward and fade before landing (1440px)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2723,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:40.274Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\camera-effects-projects-ru-7c8a8-fade-before-landing-1440px-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-943f02de24663c7d2a75",
+          "file": "camera-effects.spec.cjs",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "projects rush streaks stay visible, travel outward and fade before landing (390px)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1724,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:43.037Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\camera-effects-projects-ru-627b9--fade-before-landing-390px-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-25e5a0293de87043cb23",
+          "file": "camera-effects.spec.cjs",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "about rush streaks stay visible, travel outward and fade before landing (1440px)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2569,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:44.800Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\camera-effects-about-rush--5543e-fade-before-landing-1440px-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-1ea54a1b1ef7a7067e95",
+          "file": "camera-effects.spec.cjs",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "about rush streaks stay visible, travel outward and fade before landing (390px)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1915,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:47.408Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\camera-effects-about-rush--a9fdb--fade-before-landing-390px-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-a7a41f44bdcc17a0ab70",
+          "file": "camera-effects.spec.cjs",
+          "line": 43,
+          "column": 3
+        },
+        {
+          "title": "interrupted and reduced-motion entrances leave no speed effects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:49.367Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\camera-effects-interrupted-619a7-nces-leave-no-speed-effects\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-e1e73543ee23c391f854",
+          "file": "camera-effects.spec.cjs",
+          "line": 83,
+          "column": 1
+        },
+        {
+          "title": "the former A/B page opens the chosen studio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1549,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:50.995Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\camera-effects-the-former-A-B-page-opens-the-chosen-studio\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bf904887fdb01a0d4b6d-834f3b4d159717a4f9ed",
+          "file": "camera-effects.spec.cjs",
+          "line": 97,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "contact-api.spec.cjs",
+      "file": "contact-api.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Contact API rejects invalid input and remains disabled without configuration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:52.601Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be0165f93ca42453b8ce-075acb83bf39586cab44",
+          "file": "contact-api.spec.cjs",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "Contact API uses only the configured recipient and optional visitor Reply-To",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:52.632Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be0165f93ca42453b8ce-23a6f8e1b36dd8302006",
+          "file": "contact-api.spec.cjs",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Contact API rejects foreign origins and does not claim success on provider failure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:52.659Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be0165f93ca42453b8ce-26847e48871c8f720059",
+          "file": "contact-api.spec.cjs",
+          "line": 39,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "feedback.spec.cjs",
+      "file": "feedback.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Sound is opt-in, decodes real local recordings, produces audio, and mutes all voices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3323,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:52.692Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Sound-is-opt-in-d-e6935--audio-and-mutes-all-voices\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-97631fa178ae90e28e5a",
+          "file": "feedback.spec.cjs",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Each object uses its intended cue; journal turns only on changed chapters; hover is silent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9750,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:10:56.036Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Each-object-uses--8f2d1-ed-chapters-hover-is-silent\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-c1742c615c62b9c1fc7c",
+          "file": "feedback.spec.cjs",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "Purr has real audio, never stacks, and remains keyboard accessible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:05.825Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Purr-has-real-aud-78a67-remains-keyboard-accessible\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-5adb21f57b1f38979b82",
+          "file": "feedback.spec.cjs",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "Independent volumes persist, reload stays muted, and quick toggles leave one rain loop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2944,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:10.921Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Independent-volum-b6106-toggles-leave-one-rain-loop\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-c3784d1fda0416b6bb27",
+          "file": "feedback.spec.cjs",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "Pending contact shows an animated hourglass and confirms sound only for accepted sends",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:13.908Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Pending-contact-s-4af69-und-only-for-accepted-sends\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-3aa63ef805b8a500a8d6",
+          "file": "feedback.spec.cjs",
+          "line": 68,
+          "column": 1
+        },
+        {
+          "title": "Pixel cursor sprites track the mouse, switch context, and keep text and reduced-motion fallbacks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1512,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:15.640Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Pixel-cursor-spri-584d1-nd-reduced-motion-fallbacks\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-0e3c111aef161bd95458",
+          "file": "feedback.spec.cjs",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "Sound controls remain keyboard reachable inside sections and Escape closes settings before leaving",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2645,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:17.197Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Sound-controls-re-f2467-ses-settings-before-leaving\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-52640272493a009aeb74",
+          "file": "feedback.spec.cjs",
+          "line": 99,
+          "column": 1
+        },
+        {
+          "title": "Touch has no fake cursor and mobile sound controls leave back/download actions usable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2690,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:19.885Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-c5eb55020bd280066c4d",
+          "file": "feedback.spec.cjs",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "Recording failures and unsupported audio leave room navigation working",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7393,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:22.617Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Recording-failure-1c17f-ave-room-navigation-working\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-f5b13d6672b99a9aff32",
+          "file": "feedback.spec.cjs",
+          "line": 125,
+          "column": 1
+        },
+        {
+          "title": "Visibility handler suspends all audio and resumes only when enabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1998,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:30.078Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Visibility-handle-d86cc-d-resumes-only-when-enabled\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-276196fad8de2bf92e3f",
+          "file": "feedback.spec.cjs",
+          "line": 135,
+          "column": 1
+        },
+        {
+          "title": "Missing animated sprites retain a visible fallback pointer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1698,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:32.115Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-Missing-animated--58f88--a-visible-fallback-pointer\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-c4516d495d062d09b269",
+          "file": "feedback.spec.cjs",
+          "line": 147,
+          "column": 1
+        },
+        {
+          "title": "A mouse on narrow screens uses the grab cursor and clears it when dragging ends or loses focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1466,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:33.863Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\feedback-A-mouse-on-narrow-28d9b-ragging-ends-or-loses-focus\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "305b55328d67313306e6-3276af42848a9e8faa19",
+          "file": "feedback.spec.cjs",
+          "line": 154,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "interaction-feedback.spec.cjs",
+      "file": "interaction-feedback.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Every room object has a compact pixel label and no native title tooltip",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4691,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:35.393Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\interaction-feedback-Every-9a8c1-and-no-native-title-tooltip\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0268fc8ecfe66f32ea21-98193dc9e6ff47b6ae26",
+          "file": "interaction-feedback.spec.cjs",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Angled hit areas exclude the board margin, journal gap and phone corners",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2697,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:40.115Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\interaction-feedback-Angle-8f03b-urnal-gap-and-phone-corners\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0268fc8ecfe66f32ea21-a74f63b5c9ad9aa393f2",
+          "file": "interaction-feedback.spec.cjs",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "The approved CV downloads from the journal without changing its file bytes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2830,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:42.870Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\interaction-feedback-The-a-e2b4a-out-changing-its-file-bytes\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0268fc8ecfe66f32ea21-e6d0472d8fe41b12191e",
+          "file": "interaction-feedback.spec.cjs",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "Journey gives the board more room and keeps academic results inside chapter details",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2307,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:45.732Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\interaction-feedback-Journ-b36fa-ults-inside-chapter-details\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0268fc8ecfe66f32ea21-7faee97293248001ebc1",
+          "file": "interaction-feedback.spec.cjs",
+          "line": 60,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "lamp-and-contours.spec.cjs",
+      "file": "lamp-and-contours.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "First-visit lamp contour is present without hovering and there is no automatic turn-on",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5022,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:48.098Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\lamp-and-contours-First-vi-35b36-ere-is-no-automatic-turn-on\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-b37fe1eec93d0c51ff79",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "Lamp switches off in the click task and never restores its discovery contour after use",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7363,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:11:53.163Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\lamp-and-contours-Lamp-swi-5e615-discovery-contour-after-use\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-a6c40fe0f804a4926238",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "Portrait touch can toggle the visible lamp and does not restore its contour",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1877,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:00.561Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-93abcf655f4d722cd934",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Reduced motion keeps both lamp directions immediate and the cue stays absent after activation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:02.471Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\lamp-and-contours-Reduced--735df-ays-absent-after-activation\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-a619bfa1cafd81441f3d",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "Journal includes the right page and the books follow their uneven tops without clipped strokes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4002,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:04.675Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\lamp-and-contours-Journal--eebc5-ops-without-clipped-strokes\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0c88b45e350757e61634-b085c6f754d0f92af41f",
+          "file": "lamp-and-contours.spec.cjs",
+          "line": 80,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "sections.spec.cjs",
+      "file": "sections.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "journey shares the approved camera, restores framing and preserves both lamp states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8733,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:08.768Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-journey-shares-th-78691--preserves-both-lamp-states\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-7e9bbc4275c7cb6b9004",
+          "file": "sections.spec.cjs",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "journey deep link, refresh, browser navigation and interrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8425,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:17.556Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-journey-deep-link-4a723-ation-and-interrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-4318d13186b068641288",
+          "file": "sections.spec.cjs",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "title": "resume shares the approved camera, restores framing and preserves both lamp states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7761,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:26.045Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-resume-shares-the-cea06--preserves-both-lamp-states\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-9d49259978e855f33d60",
+          "file": "sections.spec.cjs",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "resume deep link, refresh, browser navigation and interrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8377,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:33.857Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-resume-deep-link--bb8d1-ation-and-interrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-3755ca967677793676cc",
+          "file": "sections.spec.cjs",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "title": "contact shares the approved camera, restores framing and preserves both lamp states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:42.276Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-contact-shares-th-d19ab--preserves-both-lamp-states\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-0540fa1010ea16bca767",
+          "file": "sections.spec.cjs",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "contact deep link, refresh, browser navigation and interrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:50.372Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-contact-deep-link-46ecc-ation-and-interrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-3435c653b4eb01090b89",
+          "file": "sections.spec.cjs",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "title": "bookshelf shares the approved camera, restores framing and preserves both lamp states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7766,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:12:58.855Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-bookshelf-shares--fe293--preserves-both-lamp-states\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-b5cfbe155a8409ff6b89",
+          "file": "sections.spec.cjs",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "bookshelf deep link, refresh, browser navigation and interrupted entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8827,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:13:06.666Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-bookshelf-deep-li-efaf5-ation-and-interrupted-entry\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-8d8254bcd123f6e78b39",
+          "file": "sections.spec.cjs",
+          "line": 42,
+          "column": 3
+        },
+        {
+          "title": "Journey pins work by hover, keyboard focus and touch; board remains fully visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4532,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:13:15.534Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Journey-pins-work-86d85-board-remains-fully-visible\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-8351d9270fda007c33e1",
+          "file": "sections.spec.cjs",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "Journey paginates CMS records and hides drafts; empty and failed loads remain navigable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5707,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:13:20.118Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Journey-paginates-877d4-iled-loads-remain-navigable\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-4ef3dacba6ab7b3ec390",
+          "file": "sections.spec.cjs",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "Journal chapters work and a configured resume downloads from its own top right",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3377,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:13:25.872Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Journal-chapters--1f6c4-oads-from-its-own-top-right\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-937d7e5be3def75cacef",
+          "file": "sections.spec.cjs",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "Contact validates input, retains a failed draft and clears only after a confirmed response",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4220,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:13:29.277Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Contact-validates-2f3e6--after-a-confirmed-response\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-4977cc0a0bcf5c6614c2",
+          "file": "sections.spec.cjs",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "Contact prevents duplicate sends and recovers when returning during an in-flight request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:13:33.534Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Contact-prevents--528f5-during-an-in-flight-request\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-ac455c96473671b182e2",
+          "file": "sections.spec.cjs",
+          "line": 134,
+          "column": 1
+        },
+        {
+          "title": "Keyboard focus includes contact fields and global sound controls, wraps, and returns to the phone",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3874,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:13:36.793Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Keyboard-focus-in-1c1c1-ps-and-returns-to-the-phone\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-cdb0b6dba0d1f3b33fbc",
+          "file": "sections.spec.cjs",
+          "line": 146,
+          "column": 1
+        },
+        {
+          "title": "All physical sections work at phone, tablet and desktop sizes, including short screens",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 34126,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:13:40.690Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-All-physical-sect-e796f-zes-including-short-screens\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-9a3fd6e3715cc6ac989c",
+          "file": "sections.spec.cjs",
+          "line": 158,
+          "column": 1
+        },
+        {
+          "title": "Resize and reduced motion retain the new sections without an animated rush",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3075,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:14.862Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Resize-and-reduce-a26b7-ns-without-an-animated-rush\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-d490ddb55b253c979a6e",
+          "file": "sections.spec.cjs",
+          "line": 174,
+          "column": 1
+        },
+        {
+          "title": "Project case-study files work inside Projects and preserve the selected card",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:17.993Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Project-case-stud-c3c7f--preserve-the-selected-card\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-7152c30b58de0b75a314",
+          "file": "sections.spec.cjs",
+          "line": 184,
+          "column": 1
+        },
+        {
+          "title": "Bookshelf reads published notes, switches entries and leaves About personal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5601,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:21.313Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Bookshelf-reads-p-e6f58-s-and-leaves-About-personal\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-54fc41198b530f96a9b8",
+          "file": "sections.spec.cjs",
+          "line": 194,
+          "column": 1
+        },
+        {
+          "title": "Bookshelf filters drafts and handles a failed repository without trapping navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4552,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:26.960Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\sections-Bookshelf-filters-f4154-without-trapping-navigation\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-bae2fe6386648ed24322",
+          "file": "sections.spec.cjs",
+          "line": 207,
+          "column": 1
+        },
+        {
+          "title": "Native touch selects a Journey pin and the return stays accessible after resizing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7178,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:31.677Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0538ded94f08e73a9265-def1b071bcef48ab6896",
+          "file": "sections.spec.cjs",
+          "line": 220,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "studio.spec.cjs",
+      "file": "studio.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "locked video bytes are unchanged",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:38.933Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-eb0fde9d6f056617b56b",
+          "file": "studio.spec.cjs",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "lamp plays the supplied clip, hands off to lit loop, and survives Projects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6144,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:38.979Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-lamp-plays-the-supp-f1b32--loop-and-survives-Projects\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-859c56225e4987dc3a29",
+          "file": "studio.spec.cjs",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "three shared cards, carousel selection, details and browser Back",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3714,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:45.154Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-three-shared-cards--01972-on-details-and-browser-Back\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-9ba3ea46200206e08a9e",
+          "file": "studio.spec.cjs",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "keyboard focus stays in Projects and Escape returns detail then room",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3664,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:48.908Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-keyboard-focus-stay-cdd9b-pe-returns-detail-then-room\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-d30dc3a29f68dc08714c",
+          "file": "studio.spec.cjs",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "deep link refresh, unknown project and direct-entry Back",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3119,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:52.613Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-deep-link-refresh-u-be79d-oject-and-direct-entry-Back\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-8a48487d6cb822a40220",
+          "file": "studio.spec.cjs",
+          "line": 105,
+          "column": 1
+        },
+        {
+          "title": "reduced motion has no camera rush, paused ambient and accessible lamp handoff",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1914,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:55.771Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-reduced-motion-has--4510e-and-accessible-lamp-handoff\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-70a15acf0fcf64b2c41d",
+          "file": "studio.spec.cjs",
+          "line": 119,
+          "column": 1
+        },
+        {
+          "title": "changing motion preference during lighting and entry settles safely",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:57.720Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-changing-motion-pre-c6bcb-ng-and-entry-settles-safely\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-776e29f0cc7bb420cda4",
+          "file": "studio.spec.cjs",
+          "line": 131,
+          "column": 1
+        },
+        {
+          "title": "duplicate activation, Back during entry and resize cannot strand the controller",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:14:59.983Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-duplicate-activatio-3e19d-annot-strand-the-controller\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-27a20979b9feba99059b",
+          "file": "studio.spec.cjs",
+          "line": 148,
+          "column": 1
+        },
+        {
+          "title": "mobile fills the screen, pans the room, swipes cards and returns",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4524,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:15:04.172Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-mobile-fills-the-sc-41a9e-om-swipes-cards-and-returns\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-364f37a4811c4aa61039",
+          "file": "studio.spec.cjs",
+          "line": 165,
+          "column": 1
+        },
+        {
+          "title": "empty and failed data have explicit states; drafts are not shown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3813,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:15:08.743Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-empty-and-failed-da-7972a-states-drafts-are-not-shown\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-92bac65f94619c921589",
+          "file": "studio.spec.cjs",
+          "line": 193,
+          "column": 1
+        },
+        {
+          "title": "save alignment and authored transition frames; measure an uninterrupted entry",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5566,
+                  "error": {
+                    "message": "Error: UNKNOWN: unknown error, open 'D:\\Potfolio Website\\qa\\room-1920x1080.png'",
+                    "stack": "Error: UNKNOWN: unknown error, open 'D:\\Potfolio Website\\qa\\room-1920x1080.png'\n    at D:\\Potfolio Website\\tests\\studio.spec.cjs:209:5",
+                    "location": {
+                      "file": "D:\\Potfolio Website\\tests\\studio.spec.cjs",
+                      "column": 5,
+                      "line": 209
+                    },
+                    "snippet": "  207 |   for(const [width,height] of [[1440,900],[1920,1080],[768,1024]]) {\n  208 |     await page.setViewportSize({width,height}); await ready(page); await settleVideo(page);\n> 209 |     await page.screenshot({path:testInfo.outputPath(`room-${width}x${height}.png`)});\n      |     ^\n  210 |     const rects=await page.evaluate(()=>{\n  211 |       const a=document.querySelector('#monitor-live').getBoundingClientRect(),b=document.querySelector('#monitor-hotspot').getBoundingClientRect();\n  212 |       return {screen:{x:a.x,y:a.y,w:a.width,h:a.height},hotspot:{x:b.x,y:b.y,w:b.width,h:b.height}};"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Potfolio Website\\tests\\studio.spec.cjs",
+                        "column": 5,
+                        "line": 209
+                      },
+                      "message": "Error: UNKNOWN: unknown error, open 'D:\\Potfolio Website\\qa\\room-1920x1080.png'\n\n  207 |   for(const [width,height] of [[1440,900],[1920,1080],[768,1024]]) {\n  208 |     await page.setViewportSize({width,height}); await ready(page); await settleVideo(page);\n> 209 |     await page.screenshot({path:testInfo.outputPath(`room-${width}x${height}.png`)});\n      |     ^\n  210 |     const rects=await page.evaluate(()=>{\n  211 |       const a=document.querySelector('#monitor-live').getBoundingClientRect(),b=document.querySelector('#monitor-hotspot').getBoundingClientRect();\n  212 |       return {screen:{x:a.x,y:a.y,w:a.width,h:a.height},hotspot:{x:b.x,y:b.y,w:b.width,h:b.height}};\n    at D:\\Potfolio Website\\tests\\studio.spec.cjs:209:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T04:15:12.594Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-save-alignment-and--5ecb8-sure-an-uninterrupted-entry\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-save-alignment-and--5ecb8-sure-an-uninterrupted-entry\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-save-alignment-and--5ecb8-sure-an-uninterrupted-entry\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Potfolio Website\\test-results\\studio-save-alignment-and--5ecb8-sure-an-uninterrupted-entry\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Potfolio Website\\tests\\studio.spec.cjs",
+                    "column": 5,
+                    "line": 209
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8e083ab60749e97c3fb3-2c8bb6472d0f808becff",
+          "file": "studio.spec.cjs",
+          "line": 206,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T04:09:34.748Z",
+    "duration": 349510.05,
+    "expected": 69,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

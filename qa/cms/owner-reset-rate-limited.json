@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "A real private development token follows the library callback; the form clears its URL; foreign callback origins are rejected",
+    "Short and mismatched passwords are rejected; the real reset succeeds once and revokes existing owner sessions"
+  ],
+  "errors": [],
+  "passed": false,
+  "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('navigation', { name: 'Content sections' })\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('navigation', { name: 'Content sections' }) with timeout 20000ms\n  - waiting for getByRole('navigation', { name: 'Content sections' })\n\n    at captureRawStack (D:\\Potfolio Website\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (D:\\Potfolio Website\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toBeVisible (D:\\Potfolio Website\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at verify (D:\\Potfolio Website\\scripts\\verify-owner-reset.cjs:38:132)"
+}

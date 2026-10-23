@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Approved cat reactions — motion inspection</title>
+  <style>
+    @font-face{font-family:pixel;src:url('../assets/Tiny5-Regular.ttf')}
+    *{box-sizing:border-box}html,body{height:100%;margin:0;background:#07121d;color:#eadfc7;font:18px pixel,monospace}
+    body{display:flex;flex-direction:column}header{padding:10px 16px;border-bottom:2px solid #49606a;flex:none}
+    h1{font-size:22px;font-weight:400;margin:0 12px 0 0;display:inline-block}
+    nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}button,a,select{font:inherit;color:inherit}
+    button,select{border:1px solid #72816e;background:#152a30;padding:5px 10px;box-shadow:2px 2px #03080e}
+    button{cursor:pointer}button:hover{background:#2b4444}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #f0cb80;outline-offset:3px}
+    button:disabled{opacity:.5;cursor:default}p{margin:8px 0 0;color:#afbdb8;line-height:1.2}
+    main{position:relative;flex:1;min-height:0}iframe{border:0;width:100%;height:100%;display:block}
+    #closeup{position:absolute;right:16px;bottom:72px;width:min(630px,calc(100% - 32px));border:2px solid #87907d;background:#07121d;padding:8px;box-shadow:4px 4px #02070c}
+    #closeup canvas{width:100%;image-rendering:pixelated;display:block;background:#081726}
+    #closeup p{margin:4px 0 8px}#scrub{width:min(185px,44vw);vertical-align:middle}#load-error{color:#f0bb85}[hidden]{display:none!important}
+    @media(max-width:600px){header{padding:8px}h1{font-size:19px}nav{gap:6px}button,select{padding:4px 7px}p{font-size:16px}#closeup{bottom:85px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Cat review controls">
+      <h1>CAT / MOTION INSPECTION</h1>
+      <button id="notice" disabled>Lamp reaction</button><button id="pet" disabled>Pet cat</button>
+      <button id="lamp" disabled>Toggle lamp</button><button id="pause" aria-pressed="false" disabled>Pause</button>
+      <button id="show-closeup" aria-expanded="true" aria-controls="closeup" disabled>Close-up</button>
+      <button id="compare" aria-pressed="false" disabled>Original cat</button><a href="../">Main studio</a><a href="./cat/lamp-and-petting.webm" target="_blank" rel="noopener">Recorded sample</a>
+    </nav>
+    <p>Approved cat in the main studio · Same animation instance · Original body, paws, tail and rain · 8 FPS.</p>
+    <p id="status" role="status">Loading the studio and local eye reference…</p><p id="load-error" role="alert" hidden></p>
+  </header>
+  <main>
+    <iframe id="review-studio" title="Main studio with approved cat and parrot" src="about:blank"></iframe>
+    <section id="closeup" aria-label="Cat close-up and pose inspection">
+      <canvas id="detail" width="210" height="110" aria-label="Actual cat area magnified with the local reaction" role="img"></canvas>
+      <p>Small eye, ear and cheek movement. The resting cat is the original video.</p>
+      <label for="sequence">Inspect <select id="sequence"><option value="notice">Lamp reaction</option><option value="pet">Petting</option></select></label>
+      <label for="scrub">Pose <input id="scrub" type="range" min="0" max="19" value="0"><output id="pose" for="scrub">0</output></label>
+    </section>
+  </main>
+  <script type="module" src="./cat/review-page.js"></script>
+</body>
+</html>

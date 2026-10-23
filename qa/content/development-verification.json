@@ -1,0 +1,27 @@
+{
+  "origin": "http://127.0.0.1:4180",
+  "checks": [
+    "Real CMS API contains four requested projects, six public training badges and completed About/Resume content",
+    "All four project files and tabs open; page two is reachable; miniature selection matches; wrapping and reverse navigation work",
+    "Personal About, six career milestones, resume experience chapters, credential metadata, badge images, verification links and keyboard focus work",
+    "390px and 320px touch layouts reach the fourth project and credential details without document overflow; reverse navigation works"
+  ],
+  "pageErrors": [],
+  "contentRequests": [
+    {
+      "status": 200,
+      "durationMs": 530
+    },
+    {
+      "status": 200,
+      "durationMs": 2711
+    },
+    {
+      "status": 200,
+      "durationMs": 2553
+    }
+  ],
+  "mobileReady390Ms": 3084,
+  "mobileReady320Ms": 2997,
+  "passed": true
+}

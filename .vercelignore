@@ -1,0 +1,15 @@
+.git
+.vercel
+.npm-cache
+node_modules
+public
+qa
+docs
+test-results
+playwright-report
+tests
+tmp
+.agents
+.env
+.env.*
+/*.md

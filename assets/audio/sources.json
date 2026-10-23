@@ -1,0 +1,20 @@
+[
+  {
+    "file": "cat-purr.wav",
+    "author": "Kerzoven",
+    "page": "https://opengameart.org/content/cat-purr-meow",
+    "download": "https://opengameart.org/sites/default/files/cat_purrsleepy_loop.wav",
+    "license": "CC0-1.0",
+    "sha256": "7f06368e25e6a7aec9b106c3e2915f236b3fa10b41781733ecc8a1866fc749b9",
+    "bytes": 498694
+  },
+  {
+    "file": "indoor-rain.mp3",
+    "author": "Sayuri_Odin",
+    "page": "https://freesound.org/people/Sayuri_Odin/sounds/216134/",
+    "download": "https://cdn.freesound.org/previews/216/216134_3259827-hq.mp3",
+    "license": "CC0-1.0",
+    "sha256": "3da42a205347c7b5a44e81830a471895836636cda505a37644ddc8161bdf8699",
+    "bytes": 235032
+  }
+]

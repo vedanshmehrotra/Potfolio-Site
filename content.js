@@ -9,16 +9,16 @@ window.journeyRepository = {
   /** @returns {Promise<JourneyMilestone[]>} */
   async listPublished() {
     return [
-      ['school-10', 'Class 10', 'education'],
-      ['school-12', 'Class 12', 'education'],
-      ['university', 'University', 'education'],
-      ['semester-1', 'Semester 1', 'semester'],
-      ['semester-2', 'Semester 2', 'semester'],
-      ['next-chapter', 'Next chapter', 'experience']
-    ].map(([id,title,kind],index) => ({
+      ['school', 'School', 'education', 'An early chapter. Class 10 or 12 results can sit inside these details, if you choose to include them.'],
+      ['university', 'University', 'education', 'Starting university, finding a direction, and learning through the work. Results can be supporting details here.'],
+      ['first-project', 'First project', 'project', 'A project that marked a new step: what you built, what challenged you, and what you learned.'],
+      ['internship', 'Internship', 'experience', 'A role, a team, or a responsibility that moved your professional journey forward.'],
+      ['milestone', 'Milestone', 'achievement', 'A meaningful achievement or a challenge overcome. Only add a chapter when there is something worth sharing.'],
+      ['next-role', 'Next role', 'experience', 'Room for a future role or professional chapter. This is a placeholder, not a claimed job.']
+    ].map(([id,title,kind,description],index) => ({
       id,title,kind,date:null,result:null,imageUrl:null,imageAlt:'',sortOrder:index,
       summary:'Layout preview', status:'published', preview:true,
-      description:'A place for a photo, a result, or a memory. Personal details will be added later.'
+      description
     }));
   }
 };
@@ -33,10 +33,10 @@ window.resumeRepository = {
   async getPublished() {
     return {
       name:'Vedansh Mehrotra',role:'AI / ML undergraduate',status:'published',preview:true,
-      downloadUrl:null,downloadName:'Vedansh-Mehrotra-CV.pdf',
+      downloadUrl:'./assets/Vedansh-Mehrotra-CV.pdf',downloadName:'Vedansh-Mehrotra-CV.pdf',
       sections:[
         {id:'profile',title:'Profile',entries:[{heading:'A short introduction',body:['A readable, pixel typeset version of the resume lives in this journal. Final copy will be added later.']}]},
-        {id:'education',title:'Education',entries:[{heading:'Education',meta:'CONTENT TO COME',body:['Degree, institution, and dates. Results and semester milestones belong on the Journey board.']}]},
+        {id:'education',title:'Education',entries:[{heading:'Education',meta:'CONTENT TO COME',body:['Degree, institution, and dates. The Journey board tells the broader professional story; academic results can remain supporting details.']}]},
         {id:'experience',title:'Experience',entries:[{heading:'Experience',meta:'CONTENT TO COME',body:['Role, organization, dates, and a few concise notes about the work.']}]},
         {id:'skills',title:'Skills',entries:[{heading:'Skills & training',meta:'CONTENT TO COME',body:['Languages, tools, and relevant training. The downloadable PDF can be replaced independently.']}]}]
     };

@@ -53,10 +53,9 @@ test('keyboard enters About Me, traps focus and restores the correct monitor',as
   await expect(page.getByRole('link',{name:'GitHub'})).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(page.getByRole('link',{name:'LinkedIn'})).toBeFocused();
-  for(const key of ['Tab']) {
-    await page.keyboard.press(key);
-    await expect(page.locator('#about-panel .about-back')).toBeFocused();
-  }
+  await page.keyboard.press('Tab');await expect(page.locator('#sound-toggle')).toBeFocused();
+  await page.keyboard.press('Tab');await expect(page.locator('#sound-settings-toggle')).toBeFocused();
+  await page.keyboard.press('Tab');await expect(page.locator('#about-panel .about-back')).toBeFocused();
   expect(await page.locator('#scene-viewport').evaluate(el=>el.inert)).toBe(true);
   await page.keyboard.press('Enter');
   await expect(page.locator('#app')).toHaveAttribute('data-state','room');
@@ -124,7 +123,7 @@ test('About Me handles repeated activation, interrupted entry, resize and reduce
   expect(await page.evaluate(()=>document.getAnimations().length)).toBe(0);
 });
 
-test('phone About Me fallback is readable, scrolls on short screens and returns to a visible control',async({page})=>{
+test('phone About Me fallback is readable, scrolls on short screens and returns to a visible control',async({page},testInfo)=>{
   await page.setViewportSize({width:390,height:844}); await ready(page);
   await expect(page.locator('#mobile-projects')).toBeVisible();
   await expect(page.locator('#mobile-about')).toBeVisible();
@@ -134,7 +133,7 @@ test('phone About Me fallback is readable, scrolls on short screens and returns 
   expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
   const back=await page.locator('#about-panel .about-back').boundingBox();
   expect(back.height).toBeGreaterThanOrEqual(44);
-  await page.screenshot({path:'qa/about-mobile.png'});
+  await page.screenshot({path:testInfo.outputPath('about-mobile.png')});
   await page.setViewportSize({width:390,height:568});
   await page.locator('#about-panel .about-footer').scrollIntoViewIfNeeded();
   await expect(page.locator('#about-panel .about-footer')).toBeInViewport();
@@ -152,7 +151,7 @@ test('portrait tablet exposes an About Me shortcut for the cropped CRT',async({p
   await expect(page.locator('#mobile-about')).toBeFocused();
 });
 
-test('phone shortcut keeps rush streaks moving outwards when the CRT starts off screen',async({page})=>{
+test('phone shortcut keeps rush streaks moving outwards when the CRT starts off screen',async({page},testInfo)=>{
   await page.setViewportSize({width:390,height:844}); await ready(page,'&reference=1');
   await page.locator('#mobile-about').click();
   await expect.poll(()=>page.locator('#world').evaluate(el=>el.getAnimations().length)).toBeGreaterThan(0);
@@ -165,18 +164,18 @@ test('phone shortcut keeps rush streaks moving outwards when the CRT starts off 
   const start=await sample(165),end=await sample(260);
   expect(start).toHaveLength(4);
   start.forEach((s,i)=>expect((end[i].x-s.x)*(s.x-195)+(end[i].y-s.y)*(s.y-422)).toBeGreaterThan(0));
-  await page.screenshot({path:'qa/about-mobile-entry.png'});
+  await page.screenshot({path:testInfo.outputPath('about-mobile-entry.png')});
   await page.evaluate(()=>document.getAnimations().forEach(a=>a.play()));
   await expect(page.locator('#app')).toHaveAttribute('data-state','about');
 });
 
-test('capture About Me monitor alignment, camera path and return at target viewports',async({page})=>{
+test('capture About Me monitor alignment, camera path and return at target viewports',async({page},testInfo)=>{
   for(const [width,height] of [[1440,900],[1920,1080],[768,1024]]) {
     await page.setViewportSize({width,height}); await ready(page,'&reference=1');
     const screen=await page.locator('#about-live').boundingBox(),hotspot=await page.locator('#about-hotspot').boundingBox();
     expect(screen).toEqual(hotspot);
-    await page.screenshot({path:`qa/about-room-${width}x${height}.png`});
-    await enter(page); await page.screenshot({path:`qa/about-${width}x${height}.png`});
+    await page.screenshot({path:testInfo.outputPath(`about-room-${width}x${height}.png`)});
+    await enter(page); await page.screenshot({path:testInfo.outputPath(`about-${width}x${height}.png`)});
     const bounds=await page.locator('#about-stage').boundingBox();
     expect(bounds.x).toBeGreaterThanOrEqual(-1); expect(bounds.y).toBeGreaterThanOrEqual(-1);
     expect(bounds.x+bounds.width).toBeLessThanOrEqual(width+1);
@@ -187,13 +186,13 @@ test('capture About Me monitor alignment, camera path and return at target viewp
   await page.locator('#about-hotspot').click();
   for(const time of [170,330,470]) {
     await page.evaluate(time=>document.getAnimations().forEach(a=>{a.pause();a.currentTime=time;}),time);
-    await page.screenshot({path:`qa/about-entry-${time}ms.png`});
+    await page.screenshot({path:testInfo.outputPath(`about-entry-${time}ms.png`)});
   }
   await page.evaluate(()=>document.getAnimations().forEach(a=>a.play()));
   await expect(page.locator('#app')).toHaveAttribute('data-state','about');
   await page.keyboard.press('Escape');
   await page.evaluate(()=>document.getAnimations().forEach(a=>{a.pause();a.currentTime=250;}));
-  await page.screenshot({path:'qa/about-return-250ms.png'});
+  await page.screenshot({path:testInfo.outputPath('about-return-250ms.png')});
   await page.evaluate(()=>document.getAnimations().forEach(a=>a.play()));
   await expect(page.locator('#app')).toHaveAttribute('data-state','room');
 });

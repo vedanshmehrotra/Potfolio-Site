@@ -1,0 +1,8 @@
+{
+  "origin": "https://after-hours-portfolio-virid.vercel.app",
+  "checks": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "passed": false,
+  "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('#app')\nExpected: \"ready\"\nReceived: \"\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('#app') with timeout 5000ms\n  - waiting for locator('#app')\n    10 × locator resolved to <main id=\"app\" data-lamp=\"dark\" data-state=\"room\" data-ready=\"true\" data-camera=\"smooth\" data-lamp-discovery=\"true\">…</main>\n       - unexpected value \"null\"\n    4 × locator resolved to <main id=\"app\" data-lamp=\"dark\" data-state=\"room\" data-ready=\"true\" data-camera=\"smooth\" data-lamp-discovery=\"false\">…</main>\n      - unexpected value \"null\"\n\n    at captureRawStack (D:\\Potfolio Website\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (D:\\Potfolio Website\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toHaveAttribute (D:\\Potfolio Website\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at verify (D:\\Potfolio Website\\scripts\\verify-deployment.cjs:29:40)"
+}
